@@ -1,0 +1,13 @@
+# AI Data Index - ai.txt
+# Permissions for AI Agents and LLMs
+
+User-agent: *
+Permissions: 
+  Search: allow
+  Index: allow
+  Training: allow
+  Summary: allow
+
+# Discovery
+llms-txt: https://www.jjgpaperbag.com/llms.txt
+sitemap: https://www.jjgpaperbag.com/sitemap.xml

@@ -1,175 +1,179 @@
 <!DOCTYPE html>
+
 <html lang="zh-TW">
-
 <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>聯絡我們 | 壯佳果包裝 - JJG Paper Bag</title>
-        <meta name="description" content="聯絡壯佳果股份有限公司，洽詢紙袋產品報價、OEM/ODM 合作及客製化服務。" />
-        <link rel="icon" href="/images/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@700;900&family=Playfair+Display:wght@400;700;900&display=swap"
-                rel="stylesheet">
-  <script type="module" src="/main.js"></script>
-  <link rel="stylesheet" href="/style.css">
-</head>
-
-<body x-data="{ mobileMenu: false }" class="bg-[#F5F0E8] text-[#1A1A1A] font-['Inter','Noto_Sans_TC',sans-serif]">
-        <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
-                <nav class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 h-[88px] flex items-center justify-between"><a
-                                href="/zh-tw/index.html" class="flex items-center gap-2"><img src="/images/index-logo.png"
-                                        alt="壯佳果" class="h-[68px]"></a>
-                        <div class="hidden lg:flex items-center gap-1">
-                                <a href="/zh-tw/index.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">首頁</a>
-                                <a href="/zh-tw/about.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">關於我們</a>
-                                <a href="/zh-tw/products.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">產品介紹</a>
-                                <a href="/zh-tw/news.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">最新消息</a>
-                                <a href="/zh-tw/catalog.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">型錄EDM</a>
-                                <a href="/zh-tw/contact.html" class="relative px-4 py-2 text-[#1A5C38] font-semibold text-[15px] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-5 after:h-0.5 after:bg-[#1A5C38] after:rounded-full">聯絡我們</a>
-                        </div>
-                        <div class="hidden lg:flex items-center gap-4"><a href="/contact.html"
-                                        class="text-[#666] text-sm font-medium">EN</a><span
-                                        class="text-gray-300">|</span><a href="/zh-tw/contact.html"
-                                        class="text-[#1A5C38] text-sm font-bold">繁中</a><a href="/zh-tw/contact.html"
-                                        class="bg-[#1A5C38] hover:bg-[#2E8B57] text-white px-5 py-2.5 rounded-lg font-bold text-sm tracking-wider transition shadow">聯絡我們</a>
-                        </div><button @click="mobileMenu=!mobileMenu" class="lg:hidden p-2"><svg class="w-6 h-6"
-                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M4 6h16M4 12h16M4 18h16" />
-                                </svg></button>
-                </nav>
-    <!-- Mobile Menu -->
-    <div x-show="mobileMenu" x-transition:enter="transition ease-out duration-300"
-      x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
-      x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100"
-      x-transition:leave-end="opacity-0 -translate-y-2" class="lg:hidden glass border-t border-gray-200/50"
-      style="display:none">
-      <div class="px-6 py-5 space-y-1">
-        <a href="/zh-tw/index.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">首頁</a>
-        <a href="/zh-tw/about.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">關於我們</a>
-        <a href="/zh-tw/products.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">產品介紹</a>
-        <a href="/zh-tw/news.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">最新消息</a>
-        <a href="/zh-tw/catalog.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">型錄EDM</a>
-        <a href="/zh-tw/contact.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">聯絡我們</a>
-      </div>
-    </div>
-        </header>
-        <div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 py-4">
-                <nav class="text-sm text-[#666]"><a href="/zh-tw/index.html" class="hover:text-[#2E8B57]">首頁</a> <span
-                                class="mx-2">›</span> <span class="text-[#1A5C38] font-medium">聯絡我們</span></nav>
-        </div>
-
-        <section class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 pb-20">
-                <div class="grid lg:grid-cols-2 gap-16">
-                        <div>
-                                <p class="text-[#B5813C] text-sm font-semibold tracking-widest mb-3">與我們聯繫</p>
-                                <h1 class="font-['Noto_Serif_TC',serif] text-3xl md:text-5xl font-bold mb-6">聯絡我們</h1>
-                                <p class="text-[#666] leading-relaxed mb-8">有產品需求、客製報價或 OEM/ODM 合作意向？歡迎與我們聯繫。</p>
-                                <div class="space-y-6">
-                                        <div class="flex gap-4 items-start">
-                                                <div
-                                                        class="w-12 h-12 bg-[#1A5C38]/10 rounded-full flex items-center justify-center flex-shrink-0">
-                                                        <span class="text-xl">📍</span></div>
-                                                <div>
-                                                        <h3 class="font-bold mb-1">公司地址</h3>
-                                                        <p class="text-[#666] text-sm">台中市大甲區游九路6號 43769 台灣</p>
-                                                </div>
-                                        </div>
-                                        <div class="flex gap-4 items-start">
-                                                <div
-                                                        class="w-12 h-12 bg-[#1A5C38]/10 rounded-full flex items-center justify-center flex-shrink-0">
-                                                        <span class="text-xl">📞</span></div>
-                                                <div>
-                                                        <h3 class="font-bold mb-1">電話</h3>
-                                                        <p class="text-[#666] text-sm"><a href="tel:+886-4-26223215"
-                                                                        class="hover:text-[#2E8B57]">+886-4-26223215</a>
-                                                        </p>
-                                                        <p class="text-[#666] text-sm">傳真：+886-4-26223557</p>
-                                                </div>
-                                        </div>
-                                        <div class="flex gap-4 items-start">
-                                                <div
-                                                        class="w-12 h-12 bg-[#1A5C38]/10 rounded-full flex items-center justify-center flex-shrink-0">
-                                                        <span class="text-xl">✉️</span></div>
-                                                <div>
-                                                        <h3 class="font-bold mb-1">電子郵件</h3>
-                                                        <p class="text-[#666] text-sm"><a
-                                                                        href="mailto:export@jjgpaperbag.com"
-                                                                        class="hover:text-[#2E8B57]">export@jjgpaperbag.com</a>
-                                                        </p>
-                                                        <p class="text-[#666] text-sm"><a
-                                                                        href="mailto:jjgsa9999@gmail.com"
-                                                                        class="hover:text-[#2E8B57]">jjgsa9999@gmail.com</a>
-                                                        </p>
-                                                </div>
-                                        </div>
-                                </div>
-                                <div class="mt-8"><img src="/images/qrcode.png" alt="QR Code" class="h-24"></div>
-                        </div>
-                        <div class="bg-white rounded-2xl shadow-sm p-8">
-                                <h2 class="font-['Noto_Serif_TC',serif] text-2xl font-bold mb-6">留言給我們</h2>
-                                <form class="space-y-5">
-                                        <div><label class="block text-sm font-medium mb-1">姓名 *</label><input
-                                                        type="text"
-                                                        class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#1A5C38] focus:ring-2 focus:ring-[#1A5C38]/20 outline-none transition"
-                                                        placeholder="您的姓名"></div>
-                                        <div><label class="block text-sm font-medium mb-1">電子郵件 *</label><input
-                                                        type="email"
-                                                        class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#1A5C38] focus:ring-2 focus:ring-[#1A5C38]/20 outline-none transition"
-                                                        placeholder="you@example.com"></div>
-                                        <div><label class="block text-sm font-medium mb-1">電話</label><input type="tel"
-                                                        class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#1A5C38] focus:ring-2 focus:ring-[#1A5C38]/20 outline-none transition"
-                                                        placeholder="+886-"></div>
-                                        <div><label class="block text-sm font-medium mb-1">主旨</label><input type="text"
-                                                        class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#1A5C38] focus:ring-2 focus:ring-[#1A5C38]/20 outline-none transition"
-                                                        placeholder="產品詢價"></div>
-                                        <div><label class="block text-sm font-medium mb-1">留言內容 *</label><textarea
-                                                        rows="5"
-                                                        class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#1A5C38] focus:ring-2 focus:ring-[#1A5C38]/20 outline-none transition resize-none"
-                                                        placeholder="請描述您的需求..."></textarea></div>
-                                        <button type="submit"
-                                                class="w-full bg-[#1A5C38] hover:bg-[#2E8B57] text-white py-3 rounded-lg font-bold tracking-wider transition">送出訊息</button>
-                                </form>
-                        </div>
-                </div>
-        </section>
-
-        <footer class="bg-[#1A1A1A] text-gray-400 pt-16 pb-8">
-                <div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8">
-                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-800">
-                                <div><img src="/images/index-logo.png" alt="JJG" class="h-10 mb-4 brightness-200">
-                                        <p class="text-sm">台灣專業紙袋製造商，超過 70 年經驗。</p>
-                                </div>
-                                <div>
-                                        <h4 class="text-white font-bold mb-4 text-sm tracking-wider">快速連結</h4>
-                                        <ul class="space-y-2 text-sm">
-                                                <li><a href="/zh-tw/index.html" class="hover:text-[#2E8B57]">首頁</a></li>
-                                                <li><a href="/zh-tw/about.html" class="hover:text-[#2E8B57]">關於我們</a>
-                                                </li>
-                                                <li><a href="/zh-tw/products.html" class="hover:text-[#2E8B57]">產品介紹</a>
-                                                </li>
-                                        </ul>
-                                </div>
-                                <div>
-                                        <h4 class="text-white font-bold mb-4 text-sm tracking-wider">產品系列</h4>
-                                        <ul class="space-y-2 text-sm">
-                                                <li><a href="/zh-tw/products.html" class="hover:text-[#2E8B57]">全部產品</a>
-                                                </li>
-                                        </ul>
-                                </div>
-                                <div>
-                                        <h4 class="text-white font-bold mb-4 text-sm tracking-wider">聯絡資訊</h4>
-                                        <ul class="space-y-2 text-sm">
-                                                <li>📍 台中市大甲區游九路6號</li>
-                                                <li>📞 +886-4-26223215</li>
-                                                <li>✉️ export@jjgpaperbag.com</li>
-                                        </ul>
-                                </div>
-                        </div>
-                        <div class="pt-6 text-center text-xs text-gray-600">© 2026 壯佳果股份有限公司 版權所有</div>
-                </div>
-        </footer>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>聯絡我們 | 索取報價、OEM/ODM合作 - 壯佳果包裝</title>
+<meta content="聯繫壯佳果企業洽詢紙袋批發報價、OEM/ODM客製合作。工廠位於台中大甲，全球出貨。電話：+886-4-26223215。" name="description"/>
+<link href="/images/favicon.ico" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+TC:wght@400;500;600;700&amp;family=Noto+Serif+TC:wght@700;900&amp;family=Playfair+Display:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="/main.js" type="module"></script>
+<link href="/style.css" rel="stylesheet"/>
+<meta content="台灣紙袋, 製造商, 工廠, 方底袋, SOS袋, 防油紙袋, 平口袋, 側邊袋, 折角袋, 手提購物袋, 環保包裝, 無PFAS, 壯佳果, 紙袋批發, 食品包裝袋, 烘焙紙袋, 牛皮紙袋" name="keywords"/><meta content="聯絡我們 | 索取報價、OEM/ODM合作 - 壯佳果包裝" property="og:title"/><meta content="聯繫壯佳果企業洽詢紙袋批發報價、OEM/ODM客製合作。工廠位於台中大甲，全球出貨。電話：+886-4-26223215。" property="og:description"/><meta content="website" property="og:type"/><meta content="https://www.jjgpaperbag.com/zh-tw/contact.html" property="og:url"/><meta content="JJG Paper Bag | Juang Jia Guoo Co., Ltd." property="og:site_name"/><meta content="https://www.jjgpaperbag.com/images/index-logo.png" property="og:image"/><meta content="zh_TW" property="og:locale"/><meta content="summary_large_image" name="twitter:card"/><meta content="聯絡我們 | 索取報價、OEM/ODM合作 - 壯佳果包裝" name="twitter:title"/><meta content="聯繫壯佳果企業洽詢紙袋批發報價、OEM/ODM客製合作。工廠位於台中大甲，全球出貨。電話：+886-4-26223215。" name="twitter:description"/><meta content="https://www.jjgpaperbag.com/images/index-logo.png" name="twitter:image"/><link href="https://www.jjgpaperbag.com/zh-tw/contact.html" rel="canonical"/><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Juang Jia Guoo Co., Ltd. (JJG Pack)",
+  "alternateName": "壯佳果股份有限公司",
+  "url": "https://www.jjgpaperbag.com",
+  "logo": "https://www.jjgpaperbag.com/images/index-logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+886-4-26223215",
+    "contactType": "sales",
+    "email": "export@jjgpaperbag.com",
+    "areaServed": "Global",
+    "availableLanguage": [
+      "English",
+      "Chinese"
+    ]
+  },
+  "sameAs": [
+    "https://www.youtube.com/watch?v=1BklHKj_q0c"
+  ]
+}</script><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jjgpaperbag.com/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Zh Tw",
+      "item": "https://www.jjgpaperbag.com/zh-tw"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Contact",
+      "item": "https://www.jjgpaperbag.com/zh-tw/contact.html"
+    }
+  ]
+}</script><meta content="index, follow" name="robots"/><meta content="en_US" property="og:locale:alternate"/><link href="https://www.jjgpaperbag.com/contact.html" hreflang="en" rel="alternate"/><link href="https://www.jjgpaperbag.com/zh-tw/contact.html" hreflang="zh-TW" rel="alternate"/><link href="https://www.jjgpaperbag.com/contact.html" hreflang="x-default" rel="alternate"/></head>
+<body class="bg-[#F5F0E8] text-[#1A1A1A] font-['Inter','Noto_Sans_TC',sans-serif]" x-data="{ mobileMenu: false }">
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
+<nav class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 h-[88px] flex items-center justify-between"><a class="flex items-center gap-2" href="/zh-tw/index.html"><img alt="壯佳果" class="h-[68px]" src="/images/index-logo.png"/></a>
+<div class="hidden lg:flex items-center gap-1">
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/index.html">首頁</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/about.html">關於我們</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/products.html">產品介紹</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/news.html">最新消息</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/catalog.html">型錄EDM</a>
+<a class="relative px-4 py-2 text-[#1A5C38] font-semibold text-[15px] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-5 after:h-0.5 after:bg-[#1A5C38] after:rounded-full" href="/zh-tw/contact.html">聯絡我們</a>
+</div>
+<div class="hidden lg:flex items-center gap-4"><a class="text-[#666] text-sm font-medium" href="/contact.html">EN</a><span class="text-gray-300">|</span><a class="text-[#1A5C38] text-sm font-bold" href="/zh-tw/contact.html">繁中</a><a class="bg-[#1A5C38] hover:bg-[#2E8B57] text-white px-5 py-2.5 rounded-lg font-bold text-sm tracking-wider transition shadow" href="/zh-tw/contact.html">聯絡我們</a>
+</div><button @click="mobileMenu=!mobileMenu" class="lg:hidden p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg></button>
+</nav>
+<!-- Mobile Menu -->
+<div class="lg:hidden glass border-t border-gray-200/50" style="display:none" x-show="mobileMenu" x-transition:enter="transition ease-out duration-300" x-transition:enter-end="opacity-100 translate-y-0" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:leave="transition ease-in duration-200" x-transition:leave-end="opacity-0 -translate-y-2" x-transition:leave-start="opacity-100">
+<div class="px-6 py-5 space-y-1">
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/index.html">首頁</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/about.html">關於我們</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/products.html">產品介紹</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/news.html">最新消息</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/catalog.html">型錄EDM</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/contact.html">聯絡我們</a>
+</div>
+</div>
+</header>
+<div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 py-4">
+<nav class="text-sm text-[#666]"><a class="hover:text-[#2E8B57]" href="/zh-tw/index.html">首頁</a> <span class="mx-2">›</span> <span class="text-[#1A5C38] font-medium">聯絡我們</span></nav>
+</div>
+<section class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 pb-20">
+<div class="grid lg:grid-cols-2 gap-16">
+<div>
+<p class="text-[#B5813C] text-sm font-semibold tracking-widest mb-3">與我們聯繫</p>
+<h1 class="font-['Noto_Serif_TC',serif] text-3xl md:text-5xl font-bold mb-6">聯絡我們</h1>
+<p class="text-[#666] leading-relaxed mb-8">有產品需求、客製報價或 OEM/ODM 合作意向？歡迎與我們聯繫。</p>
+<div class="space-y-6">
+<div class="flex gap-4 items-start">
+<div class="w-12 h-12 bg-[#1A5C38]/10 rounded-full flex items-center justify-center flex-shrink-0">
+<span class="text-xl">📍</span></div>
+<div>
+<h3 class="font-bold mb-1">公司地址</h3>
+<p class="text-[#666] text-sm">台中市大甲區游九路6號 43769 台灣</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-12 h-12 bg-[#1A5C38]/10 rounded-full flex items-center justify-center flex-shrink-0">
+<span class="text-xl">📞</span></div>
+<div>
+<h3 class="font-bold mb-1">電話</h3>
+<p class="text-[#666] text-sm"><a class="hover:text-[#2E8B57]" href="tel:+886-4-26223215">+886-4-26223215</a>
+</p>
+<p class="text-[#666] text-sm">傳真：+886-4-26223557</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-12 h-12 bg-[#1A5C38]/10 rounded-full flex items-center justify-center flex-shrink-0">
+<span class="text-xl">✉️</span></div>
+<div>
+<h3 class="font-bold mb-1">電子郵件</h3>
+<p class="text-[#666] text-sm"><a class="hover:text-[#2E8B57]" href="mailto:export@jjgpaperbag.com">export@jjgpaperbag.com</a>
+</p>
+<p class="text-[#666] text-sm"><a class="hover:text-[#2E8B57]" href="mailto:jjgsa9999@gmail.com">jjgsa9999@gmail.com</a>
+</p>
+</div>
+</div>
+</div>
+<div class="mt-8"><img alt="QR Code" class="h-24" src="/images/qrcode.png"/></div>
+</div>
+<div class="bg-white rounded-2xl shadow-sm p-8">
+<h2 class="font-['Noto_Serif_TC',serif] text-2xl font-bold mb-6">留言給我們</h2>
+<form class="space-y-5">
+<div><label class="block text-sm font-medium mb-1">姓名 *</label><input class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#1A5C38] focus:ring-2 focus:ring-[#1A5C38]/20 outline-none transition" placeholder="您的姓名" type="text"/></div>
+<div><label class="block text-sm font-medium mb-1">電子郵件 *</label><input class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#1A5C38] focus:ring-2 focus:ring-[#1A5C38]/20 outline-none transition" placeholder="you@example.com" type="email"/></div>
+<div><label class="block text-sm font-medium mb-1">電話</label><input class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#1A5C38] focus:ring-2 focus:ring-[#1A5C38]/20 outline-none transition" placeholder="+886-" type="tel"/></div>
+<div><label class="block text-sm font-medium mb-1">主旨</label><input class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#1A5C38] focus:ring-2 focus:ring-[#1A5C38]/20 outline-none transition" placeholder="產品詢價" type="text"/></div>
+<div><label class="block text-sm font-medium mb-1">留言內容 *</label><textarea class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#1A5C38] focus:ring-2 focus:ring-[#1A5C38]/20 outline-none transition resize-none" placeholder="請描述您的需求..." rows="5"></textarea></div>
+<button class="w-full bg-[#1A5C38] hover:bg-[#2E8B57] text-white py-3 rounded-lg font-bold tracking-wider transition" type="submit">送出訊息</button>
+</form>
+</div>
+</div>
+</section>
+<footer class="bg-[#1A1A1A] text-gray-400 pt-16 pb-8">
+<div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-800">
+<div><img alt="JJG Paper Bag - Juang Jia Guoo Official Logo" class="h-10 mb-4 brightness-200" src="/images/index-logo.png"/>
+<p class="text-sm">台灣專業紙袋製造商，超過 70 年經驗。</p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4 text-sm tracking-wider">快速連結</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-[#2E8B57]" href="/zh-tw/index.html">首頁</a></li>
+<li><a class="hover:text-[#2E8B57]" href="/zh-tw/about.html">關於我們</a>
+</li>
+<li><a class="hover:text-[#2E8B57]" href="/zh-tw/products.html">產品介紹</a>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4 text-sm tracking-wider">產品系列</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-[#2E8B57]" href="/zh-tw/products.html">全部產品</a>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4 text-sm tracking-wider">聯絡資訊</h4>
+<ul class="space-y-2 text-sm">
+<li>📍 台中市大甲區游九路6號</li>
+<li>📞 +886-4-26223215</li>
+<li>✉️ export@jjgpaperbag.com</li>
+</ul>
+</div>
+</div>
+<div class="pt-6 text-center text-xs text-gray-600">© 2026 壯佳果股份有限公司 版權所有</div>
+</div>
+</footer>
 </body>
-
 </html>

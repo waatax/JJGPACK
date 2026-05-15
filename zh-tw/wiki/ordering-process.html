@@ -1,113 +1,154 @@
 <!DOCTYPE html>
+
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>訂做紙袋流程步驟 (懶人包) | 壯佳果包裝</title>
-  <meta name="description" content="想訂做專屬客製化紙袋？四大步驟完整拆解：確認用途規格、詢價提供檔案、設計校稿打樣、下單生產交貨。" />
-  <link rel="icon" href="/images/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@700;900&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
-  <script type="module" src="/main.js"></script>
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body x-data="{ mobileMenu: false }" class="bg-[#F5F0E8] text-[#1A1A1A] font-['Inter','Noto_Sans_TC',sans-serif]">
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
-    <nav class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 h-[88px] flex items-center justify-between">
-      <a href="/zh-tw/index.html" class="flex items-center gap-2"><img src="/images/index-logo.png" alt="壯佳果" class="h-[68px]"></a>
-      <div class="hidden lg:flex items-center gap-1">
-        <a href="/zh-tw/index.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">首頁</a>
-        <a href="/zh-tw/about.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">關於我們</a>
-        <a href="/zh-tw/products.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">產品介紹</a>
-        <a href="/zh-tw/news.html" class="relative px-4 py-2 text-[#1A5C38] font-semibold text-[15px] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-5 after:h-0.5 after:bg-[#1A5C38] after:rounded-full">最新消息</a>
-        <a href="/zh-tw/catalog.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">型錄EDM</a>
-        <a href="/zh-tw/contact.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">聯絡我們</a>
-      </div>
-      <div class="hidden lg:flex items-center gap-4">
-        <a href="/zh-tw/contact.html" class="bg-[#1A5C38] hover:bg-[#2E8B57] text-white px-5 py-2.5 rounded-lg font-bold text-sm tracking-wider transition shadow">聯絡我們</a>
-      </div>
-      <button @click="mobileMenu=!mobileMenu" class="lg:hidden p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-    </nav>
-    <div x-show="mobileMenu" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0 -translate-y-2" class="lg:hidden glass border-t border-gray-200/50" style="display:none">
-      <div class="px-6 py-5 space-y-1">
-        <a href="/zh-tw/index.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">首頁</a>
-        <a href="/zh-tw/about.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">關於我們</a>
-        <a href="/zh-tw/products.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">產品介紹</a>
-        <a href="/zh-tw/news.html" class="block py-2 px-3 rounded bg-[#F5F0E8] font-semibold text-[#1A5C38]">最新消息</a>
-        <a href="/zh-tw/catalog.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">型錄EDM</a>
-        <a href="/zh-tw/contact.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">聯絡我們</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Breadcrumb -->
-  <div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 py-4">
-    <nav class="text-sm text-[#666]"><a href="/zh-tw/index.html" class="hover:text-[#2E8B57]">首頁</a> <span class="mx-2">›</span> <a href="/zh-tw/news.html#wiki" class="hover:text-[#2E8B57]">最新消息</a> <span class="mx-2">›</span> <span class="text-[#1A5C38] font-medium">紙袋小百科</span></nav>
-  </div>
-
-  <!-- Article Header -->
-  <section class="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8 pb-8">
-    <span class="inline-block text-xs font-bold uppercase tracking-wider text-white bg-[#B5813C] px-4 py-1.5 rounded-full mb-4">紙袋小百科</span>
-    <h1 class="font-['Noto_Serif_TC',serif] text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">訂做紙袋流程步驟<br class="hidden md:block"><span class="text-[#B5813C]">(懶人包)</span></h1>
-    <p class="text-[#666] text-lg leading-relaxed">想了解如何訂做專屬的客製化紙袋嗎？標準生產流程通常包含以下<strong class="text-[#1A1A1A]">四個主要步驟</strong>：</p>
-  </section>
-
-  <!-- 4 Steps -->
-  <section class="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8 pb-16">
-    <div class="grid md:grid-cols-2 gap-6">
-
-      <!-- Step 01 -->
-      <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 relative overflow-hidden group hover:shadow-lg transition-all">
-        <div class="absolute top-4 right-6 text-6xl font-black text-[#B5813C]/10 select-none">01</div>
-        <h3 class="font-['Noto_Serif_TC',serif] text-xl font-bold mb-4 text-[#1A1A1A] relative z-10">確認用途、規格、與材質</h3>
-        <p class="text-[#555] text-sm leading-relaxed relative z-10">首先需決定紙袋的用途，並根據此決定紙袋尺寸（長x寬x高）與紙張材質（如：防油紙、白牛皮、赤牛皮、回收牛皮紙、淋膜紙）。同時需確認樣式（防油袋、尖底袋、方型袋、扁繩提袋、捲繩提袋、L袋或平張紙）以及預計製作的數量 (MOQ)。</p>
-      </div>
-
-      <!-- Step 02 -->
-      <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 relative overflow-hidden group hover:shadow-lg transition-all">
-        <div class="absolute top-4 right-6 text-6xl font-black text-[#B5813C]/10 select-none">02</div>
-        <h3 class="font-['Noto_Serif_TC',serif] text-xl font-bold mb-4 text-[#1A1A1A] relative z-10">詢價與提供檔案</h3>
-        <p class="text-[#555] text-sm leading-relaxed relative z-10">將上述規格提供給廠商進行估價。若有設計圖稿（通常需 AI 向量檔），如果沒有請提供設計草稿，一併提供以利廠商評估印刷製版成本。</p>
-      </div>
-
-      <!-- Step 03 -->
-      <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 relative overflow-hidden group hover:shadow-lg transition-all">
-        <div class="absolute top-4 right-6 text-6xl font-black text-[#B5813C]/10 select-none">03</div>
-        <h3 class="font-['Noto_Serif_TC',serif] text-xl font-bold mb-4 text-[#1A1A1A] relative z-10">設計校稿與打樣</h3>
-        <p class="text-[#555] text-sm leading-relaxed relative z-10">確認報價後，廠商會提供刀模圖及設計顏色 Pantone 編號，雙方就圖做最後溝通印刷特色、紙質及承重能力。同樣的顏色在不同的材質下會產生稍微不同的印刷效果。提供圖檔請以向量圖檔為優先，避免解析度不佳及無法製圖。</p>
-      </div>
-
-      <!-- Step 04 -->
-      <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 relative overflow-hidden group hover:shadow-lg transition-all">
-        <div class="absolute top-4 right-6 text-6xl font-black text-[#B5813C]/10 select-none">04</div>
-        <h3 class="font-['Noto_Serif_TC',serif] text-xl font-bold mb-4 text-[#1A1A1A] relative z-10">下單生產與交貨</h3>
-        <p class="text-[#555] text-sm leading-relaxed relative z-10">確認樣品無誤後，簽署訂單並支付訂金。工廠即開始進行備料、分條、加工、印刷、糊袋等大貨生產作業，完成品檢後支付尾款並安排出貨。</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="bg-[#1A5C38] py-16 md:py-20">
-    <div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
-      <h2 class="font-['Noto_Serif_TC',serif] text-3xl font-bold text-white mb-4">準備好訂做您的專屬紙袋了嗎？</h2>
-      <p class="text-white/80 text-lg mb-8">從確認需求到成品交貨，壯佳果全程為您服務。</p>
-      <a href="/zh-tw/contact.html" class="bg-white text-[#1A5C38] px-10 py-3.5 rounded-lg font-bold tracking-wider hover:bg-[#F5F0E8] transition inline-block">立即諮詢</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-[#1A1A1A] text-gray-400 pt-16 pb-8">
-    <div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-800">
-        <div><img src="/images/index-logo.png" alt="JJG" class="h-10 mb-4 brightness-200"><p class="text-sm">台灣專業紙袋製造商，超過 70 年經驗。</p></div>
-        <div><h4 class="text-white font-bold mb-4 text-sm tracking-wider">快速連結</h4><ul class="space-y-2 text-sm"><li><a href="/zh-tw/index.html" class="hover:text-[#2E8B57]">首頁</a></li><li><a href="/zh-tw/about.html" class="hover:text-[#2E8B57]">關於我們</a></li><li><a href="/zh-tw/products.html" class="hover:text-[#2E8B57]">產品介紹</a></li></ul></div>
-        <div><h4 class="text-white font-bold mb-4 text-sm tracking-wider">產品系列</h4><ul class="space-y-2 text-sm"><li><a href="/zh-tw/products.html" class="hover:text-[#2E8B57]">全部產品</a></li></ul></div>
-        <div><h4 class="text-white font-bold mb-4 text-sm tracking-wider">聯絡資訊</h4><ul class="space-y-2 text-sm"><li>📍 台中市大甲區游九路6號</li><li>📞 +886-4-26223215</li><li>✉️ export@jjgpaperbag.com</li></ul></div>
-      </div>
-      <div class="pt-6 text-center text-xs text-gray-600">© 2026 壯佳果股份有限公司 版權所有</div>
-    </div>
-  </footer>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>訂做紙袋流程步驟 (懶人包) | 壯佳果包裝</title>
+<meta content="想訂做專屬客製化紙袋？四大步驟完整拆解：確認用途規格、詢價提供檔案、設計校稿打樣、下單生產交貨。" name="description"/>
+<link href="/images/favicon.ico" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+TC:wght@400;500;600;700&amp;family=Noto+Serif+TC:wght@700;900&amp;family=Playfair+Display:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="/main.js" type="module"></script>
+<link href="/style.css" rel="stylesheet"/>
+<meta content="台灣紙袋, 製造商, 工廠, 方底袋, SOS袋, 防油紙袋, 平口袋, 側邊袋, 折角袋, 手提購物袋, 環保包裝, 無PFAS, 壯佳果, 紙袋批發, 食品包裝袋, 烘焙紙袋, 牛皮紙袋" name="keywords"/><meta content="訂做紙袋流程步驟 (懶人包) | 壯佳果包裝" property="og:title"/><meta content="想訂做專屬客製化紙袋？四大步驟完整拆解：確認用途規格、詢價提供檔案、設計校稿打樣、下單生產交貨。" property="og:description"/><meta content="website" property="og:type"/><meta content="https://www.jjgpaperbag.com/zh-tw/wiki/ordering-process.html" property="og:url"/><meta content="JJG Paper Bag | Juang Jia Guoo Co., Ltd." property="og:site_name"/><meta content="https://www.jjgpaperbag.com/images/index-logo.png" property="og:image"/><meta content="zh_TW" property="og:locale"/><meta content="summary_large_image" name="twitter:card"/><meta content="訂做紙袋流程步驟 (懶人包) | 壯佳果包裝" name="twitter:title"/><meta content="想訂做專屬客製化紙袋？四大步驟完整拆解：確認用途規格、詢價提供檔案、設計校稿打樣、下單生產交貨。" name="twitter:description"/><meta content="https://www.jjgpaperbag.com/images/index-logo.png" name="twitter:image"/><link href="https://www.jjgpaperbag.com/zh-tw/wiki/ordering-process.html" rel="canonical"/><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Juang Jia Guoo Co., Ltd. (JJG Pack)",
+  "alternateName": "壯佳果股份有限公司",
+  "url": "https://www.jjgpaperbag.com",
+  "logo": "https://www.jjgpaperbag.com/images/index-logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+886-4-26223215",
+    "contactType": "sales",
+    "email": "export@jjgpaperbag.com",
+    "areaServed": "Global",
+    "availableLanguage": [
+      "English",
+      "Chinese"
+    ]
+  },
+  "sameAs": [
+    "https://www.youtube.com/watch?v=1BklHKj_q0c"
+  ]
+}</script><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jjgpaperbag.com/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Zh Tw",
+      "item": "https://www.jjgpaperbag.com/zh-tw"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Wiki",
+      "item": "https://www.jjgpaperbag.com/zh-tw/wiki"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Ordering Process",
+      "item": "https://www.jjgpaperbag.com/zh-tw/wiki/ordering-process.html"
+    }
+  ]
+}</script><meta content="index, follow" name="robots"/><meta content="en_US" property="og:locale:alternate"/></head>
+<body class="bg-[#F5F0E8] text-[#1A1A1A] font-['Inter','Noto_Sans_TC',sans-serif]" x-data="{ mobileMenu: false }">
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
+<nav class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 h-[88px] flex items-center justify-between">
+<a class="flex items-center gap-2" href="/zh-tw/index.html"><img alt="壯佳果" class="h-[68px]" src="/images/index-logo.png"/></a>
+<div class="hidden lg:flex items-center gap-1">
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/index.html">首頁</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/about.html">關於我們</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/products.html">產品介紹</a>
+<a class="relative px-4 py-2 text-[#1A5C38] font-semibold text-[15px] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-5 after:h-0.5 after:bg-[#1A5C38] after:rounded-full" href="/zh-tw/news.html">最新消息</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/catalog.html">型錄EDM</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/contact.html">聯絡我們</a>
+</div>
+<div class="hidden lg:flex items-center gap-4">
+<a class="bg-[#1A5C38] hover:bg-[#2E8B57] text-white px-5 py-2.5 rounded-lg font-bold text-sm tracking-wider transition shadow" href="/zh-tw/contact.html">聯絡我們</a>
+</div>
+<button @click="mobileMenu=!mobileMenu" class="lg:hidden p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+</nav>
+<div class="lg:hidden glass border-t border-gray-200/50" style="display:none" x-show="mobileMenu" x-transition:enter="transition ease-out duration-300" x-transition:enter-end="opacity-100 translate-y-0" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:leave="transition ease-in duration-200" x-transition:leave-end="opacity-0 -translate-y-2" x-transition:leave-start="opacity-100">
+<div class="px-6 py-5 space-y-1">
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/index.html">首頁</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/about.html">關於我們</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/products.html">產品介紹</a>
+<a class="block py-2 px-3 rounded bg-[#F5F0E8] font-semibold text-[#1A5C38]" href="/zh-tw/news.html">最新消息</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/catalog.html">型錄EDM</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/contact.html">聯絡我們</a>
+</div>
+</div>
+</header>
+<!-- Breadcrumb -->
+<div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 py-4">
+<nav class="text-sm text-[#666]"><a class="hover:text-[#2E8B57]" href="/zh-tw/index.html">首頁</a> <span class="mx-2">›</span> <a class="hover:text-[#2E8B57]" href="/zh-tw/news.html#wiki">最新消息</a> <span class="mx-2">›</span> <span class="text-[#1A5C38] font-medium">紙袋小百科</span></nav>
+</div>
+<!-- Article Header -->
+<section class="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8 pb-8">
+<span class="inline-block text-xs font-bold uppercase tracking-wider text-white bg-[#B5813C] px-4 py-1.5 rounded-full mb-4">紙袋小百科</span>
+<h1 class="font-['Noto_Serif_TC',serif] text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">訂做紙袋流程步驟<br class="hidden md:block"/><span class="text-[#B5813C]">(懶人包)</span></h1>
+<p class="text-[#666] text-lg leading-relaxed">想了解如何訂做專屬的客製化紙袋嗎？標準生產流程通常包含以下<strong class="text-[#1A1A1A]">四個主要步驟</strong>：</p>
+</section>
+<!-- 4 Steps -->
+<section class="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8 pb-16">
+<div class="grid md:grid-cols-2 gap-6">
+<!-- Step 01 -->
+<div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 relative overflow-hidden group hover:shadow-lg transition-all">
+<div class="absolute top-4 right-6 text-6xl font-black text-[#B5813C]/10 select-none">01</div>
+<h3 class="font-['Noto_Serif_TC',serif] text-xl font-bold mb-4 text-[#1A1A1A] relative z-10">確認用途、規格、與材質</h3>
+<p class="text-[#555] text-sm leading-relaxed relative z-10">首先需決定紙袋的用途，並根據此決定紙袋尺寸（長x寬x高）與紙張材質（如：防油紙、白牛皮、赤牛皮、回收牛皮紙、淋膜紙）。同時需確認樣式（防油袋、尖底袋、方型袋、扁繩提袋、捲繩提袋、L袋或平張紙）以及預計製作的數量 (MOQ)。</p>
+</div>
+<!-- Step 02 -->
+<div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 relative overflow-hidden group hover:shadow-lg transition-all">
+<div class="absolute top-4 right-6 text-6xl font-black text-[#B5813C]/10 select-none">02</div>
+<h3 class="font-['Noto_Serif_TC',serif] text-xl font-bold mb-4 text-[#1A1A1A] relative z-10">詢價與提供檔案</h3>
+<p class="text-[#555] text-sm leading-relaxed relative z-10">將上述規格提供給廠商進行估價。若有設計圖稿（通常需 AI 向量檔），如果沒有請提供設計草稿，一併提供以利廠商評估印刷製版成本。</p>
+</div>
+<!-- Step 03 -->
+<div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 relative overflow-hidden group hover:shadow-lg transition-all">
+<div class="absolute top-4 right-6 text-6xl font-black text-[#B5813C]/10 select-none">03</div>
+<h3 class="font-['Noto_Serif_TC',serif] text-xl font-bold mb-4 text-[#1A1A1A] relative z-10">設計校稿與打樣</h3>
+<p class="text-[#555] text-sm leading-relaxed relative z-10">確認報價後，廠商會提供刀模圖及設計顏色 Pantone 編號，雙方就圖做最後溝通印刷特色、紙質及承重能力。同樣的顏色在不同的材質下會產生稍微不同的印刷效果。提供圖檔請以向量圖檔為優先，避免解析度不佳及無法製圖。</p>
+</div>
+<!-- Step 04 -->
+<div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 relative overflow-hidden group hover:shadow-lg transition-all">
+<div class="absolute top-4 right-6 text-6xl font-black text-[#B5813C]/10 select-none">04</div>
+<h3 class="font-['Noto_Serif_TC',serif] text-xl font-bold mb-4 text-[#1A1A1A] relative z-10">下單生產與交貨</h3>
+<p class="text-[#555] text-sm leading-relaxed relative z-10">確認樣品無誤後，簽署訂單並支付訂金。工廠即開始進行備料、分條、加工、印刷、糊袋等大貨生產作業，完成品檢後支付尾款並安排出貨。</p>
+</div>
+</div>
+</section>
+<!-- CTA -->
+<section class="bg-[#1A5C38] py-16 md:py-20">
+<div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
+<h2 class="font-['Noto_Serif_TC',serif] text-3xl font-bold text-white mb-4">準備好訂做您的專屬紙袋了嗎？</h2>
+<p class="text-white/80 text-lg mb-8">從確認需求到成品交貨，壯佳果全程為您服務。</p>
+<a class="bg-white text-[#1A5C38] px-10 py-3.5 rounded-lg font-bold tracking-wider hover:bg-[#F5F0E8] transition inline-block" href="/zh-tw/contact.html">立即諮詢</a>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#1A1A1A] text-gray-400 pt-16 pb-8">
+<div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-800">
+<div><img alt="JJG Paper Bag - Juang Jia Guoo Official Logo" class="h-10 mb-4 brightness-200" src="/images/index-logo.png"/><p class="text-sm">台灣專業紙袋製造商，超過 70 年經驗。</p></div>
+<div><h4 class="text-white font-bold mb-4 text-sm tracking-wider">快速連結</h4><ul class="space-y-2 text-sm"><li><a class="hover:text-[#2E8B57]" href="/zh-tw/index.html">首頁</a></li><li><a class="hover:text-[#2E8B57]" href="/zh-tw/about.html">關於我們</a></li><li><a class="hover:text-[#2E8B57]" href="/zh-tw/products.html">產品介紹</a></li></ul></div>
+<div><h4 class="text-white font-bold mb-4 text-sm tracking-wider">產品系列</h4><ul class="space-y-2 text-sm"><li><a class="hover:text-[#2E8B57]" href="/zh-tw/products.html">全部產品</a></li></ul></div>
+<div><h4 class="text-white font-bold mb-4 text-sm tracking-wider">聯絡資訊</h4><ul class="space-y-2 text-sm"><li>📍 台中市大甲區游九路6號</li><li>📞 +886-4-26223215</li><li>✉️ export@jjgpaperbag.com</li></ul></div>
+</div>
+<div class="pt-6 text-center text-xs text-gray-600">© 2026 壯佳果股份有限公司 版權所有</div>
+</div>
+</footer>
 </body>
 </html>

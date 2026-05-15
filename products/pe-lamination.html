@@ -1,71 +1,110 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PE-Lamination Bag | JJG Pack - 壯佳果包裝</title>
-  <link rel="icon" href="/images/favicon.ico" />
-  <script type="module" src="/main.js"></script>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@700;900&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
-</head>
-<body x-data="{ mobileMenu: false  }" class="bg-[#F5F0E8] text-[#1A1A1A] font-['Inter','Noto_Sans_TC',sans-serif]">
-  <header class="fixed top-0 left-0 right-0 z-50 glass transition-all duration-500">
-    <nav class="max-w-[1440px] mx-auto px-6 h-[92px] flex items-center justify-between">
-      <a href="/index.html" class="flex items-center gap-3"><img src="/images/index-logo.png" alt="JJG" class="h-[62px]"></a>
-      
-      <div class="hidden lg:flex items-center gap-1">
-        <a href="/index.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">Home</a>
-        <a href="/about.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">About Us</a>
-        <a href="/products.html" class="px-4 py-2 text-[#1A5C38] font-semibold text-[15px] relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-5 after:h-0.5 after:bg-[#1A5C38] after:rounded-full">Products</a>
-        <a href="/news.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">News</a>
-        <a href="/catalog.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">E-Catalog</a>
-        <a href="/contact.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">Contact Us</a>
-      </div>
-
-      <div class="hidden lg:flex items-center gap-5">
-        <div class="flex items-center gap-1 text-sm">
-          <a href="/pe-lamination.html" class="text-[#1A5C38] font-semibold">EN</a>
-          <a href="/zh-tw/pe-lamination.html" class="text-[#888] hover:text-[#1A5C38]">繁中</a>
-        </div>
-        <a href="/contact.html" class="btn-primary text-sm !py-2.5 !px-6 !rounded-lg"><span>Contact Us</span></a>
-      </div>
-      <button @click="mobileMenu=!mobileMenu" class="lg:hidden p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg></button>
-    </nav>
-    <!-- Mobile Menu -->
-    <div x-show="mobileMenu" x-transition:enter="transition ease-out duration-300"
-      x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
-      x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100"
-      x-transition:leave-end="opacity-0 -translate-y-2" class="lg:hidden glass border-t border-gray-200/50"
-      style="display:none">
-      <div class="px-6 py-5 space-y-1">
-        <a href="/index.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">Home</a>
-        <a href="/about.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">About Us</a>
-        <a href="/products.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">Products</a>
-        <a href="/news.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">News</a>
-        <a href="/catalog.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">E-Catalog</a>
-        <a href="/contact.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">Contact Us</a>
-      </div>
-    </div>
-  </header>
-  <div class="pt-[92px]">
-<section class="max-w-[1440px] mx-auto px-6 py-12"><nav class="text-sm text-[#666] mb-8"><a href="/index.html">Home</a> › <a href="/products.html">Products</a> › <span class="text-[#1A5C38] font-medium">PE-Lamination Bag</span></nav><h1 class="font-['Playfair_Display',serif] text-4xl md:text-5xl font-bold mb-4">PE-Lamination Bag</h1><p class="text-lg text-[#666] max-w-2xl mb-12">Leak-proof PE-laminated bags for greasy and moist foods.</p><div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"><div class="bg-white rounded-2xl overflow-hidden shadow-premium card-hover group"><a href="/products/pe-lamination/l-bag.html" class="aspect-[4/3] overflow-hidden block"><img src="/proimages/detail/l-bag.jpg" alt="L Bag" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></a><div class="p-7"><span class="inline-block text-xs font-bold uppercase tracking-wider text-[#1A5C38] bg-[#1A5C38]/8 px-3 py-1 rounded-full mb-3">PE-Lamination Bag</span><h3 class="font-['Playfair_Display',serif] text-xl font-bold mb-2 group-hover:text-[#1A5C38] transition">L Bag</h3><p class="text-sm text-[#666] mb-5 line-clamp-2">Leak-proof and grease-resistant burger and sandwich pocket.</p><a href="/products/pe-lamination/l-bag.html" class="inline-flex items-center gap-2 text-[#1A5C38] font-bold text-sm group-hover:gap-3 transition-all">View Details<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a></div></div><div class="bg-white rounded-2xl overflow-hidden shadow-premium card-hover group"><a href="/products/pe-lamination/burger-pocket-paper-bag.html" class="aspect-[4/3] overflow-hidden block"><img src="https://www.jjgpaperbag.com/proimages/sr/product/PE-Lamination-paper-1.jpg" alt="Burger pocket paper bag" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></a><div class="p-7"><span class="inline-block text-xs font-bold uppercase tracking-wider text-[#1A5C38] bg-[#1A5C38]/8 px-3 py-1 rounded-full mb-3">PE-Lamination Bag</span><h3 class="font-['Playfair_Display',serif] text-xl font-bold mb-2 group-hover:text-[#1A5C38] transition">Burger pocket paper bag</h3><p class="text-sm text-[#666] mb-5 line-clamp-2">Perfect for burgers and sandwiches.</p><a href="/products/pe-lamination/burger-pocket-paper-bag.html" class="inline-flex items-center gap-2 text-[#1A5C38] font-bold text-sm group-hover:gap-3 transition-all">View Details<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a></div></div><div class="bg-white rounded-2xl overflow-hidden shadow-premium card-hover group"><a href="/products/pe-lamination/deli-wrap-paper.html" class="aspect-[4/3] overflow-hidden block"><img src="https://www.jjgpaperbag.com/proimages/sr/product/pro3-2.png" alt="Deli Wrap Paper" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></a><div class="p-7"><span class="inline-block text-xs font-bold uppercase tracking-wider text-[#1A5C38] bg-[#1A5C38]/8 px-3 py-1 rounded-full mb-3">PE-Lamination Bag</span><h3 class="font-['Playfair_Display',serif] text-xl font-bold mb-2 group-hover:text-[#1A5C38] transition">Deli Wrap Paper</h3><p class="text-sm text-[#666] mb-5 line-clamp-2">Multi-purpose deli wrapping sheets.</p><a href="/products/pe-lamination/deli-wrap-paper.html" class="inline-flex items-center gap-2 text-[#1A5C38] font-bold text-sm group-hover:gap-3 transition-all">View Details<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a></div></div><div class="bg-white rounded-2xl overflow-hidden shadow-premium card-hover group"><a href="/products/pe-lamination/toast-bags.html" class="aspect-[4/3] overflow-hidden block"><img src="https://www.jjgpaperbag.com/proimages/sr/0901-4.jpg" alt="Toast Bags" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"></a><div class="p-7"><span class="inline-block text-xs font-bold uppercase tracking-wider text-[#1A5C38] bg-[#1A5C38]/8 px-3 py-1 rounded-full mb-3">PE-Lamination Bag</span><h3 class="font-['Playfair_Display',serif] text-xl font-bold mb-2 group-hover:text-[#1A5C38] transition">Toast Bags</h3><p class="text-sm text-[#666] mb-5 line-clamp-2">Reliable toast and snack bags.</p><a href="/products/pe-lamination/toast-bags.html" class="inline-flex items-center gap-2 text-[#1A5C38] font-bold text-sm group-hover:gap-3 transition-all">View Details<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a></div></div></div></section>
-  </div>
-  <footer class="bg-[#111] text-gray-400 pt-20 pb-8">
-    <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/10">
-        <div><img src="/images/index-logo.png" alt="JJG" class="h-[68px] mb-5 brightness-200"><p class="text-sm leading-relaxed text-gray-500">Professional paper bag manufacturer in Taiwan with 70+ years of experience.</p></div>
-        <div><h4 class="text-white font-bold mb-5 text-sm tracking-[0.15em] uppercase">Quick Links</h4><ul class="space-y-3 text-sm"><li><a href="/index.html" class="hover:text-[#2E8B57] transition">Home</a></li><li><a href="/products.html" class="hover:text-[#2E8B57] transition">Products</a></li><li><a href="/contact.html" class="hover:text-[#2E8B57] transition">Contact Us</a></li></ul></div>
-        <div><h4 class="text-white font-bold mb-5 text-sm tracking-[0.15em] uppercase">Products</h4><ul class="space-y-3 text-sm"><li><a href="/products.html" class="hover:text-[#2E8B57] transition">All Products</a></li></ul></div>
-        <div><h4 class="text-white font-bold mb-5 text-sm tracking-[0.15em] uppercase">Contact Info</h4><ul class="space-y-4 text-sm"><li>📍 No.6, You 9th Rd. Dajia Dist., Taichung City 43769 Taiwan</li><li>📞 +886-4-26223215</li><li>✉️ export@jjgpaperbag.com</li></ul></div>
-      </div>
-      <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-xs text-gray-600">© 2026 壯佳果股份有限公司 Juang Jia Guoo Co., Ltd. All rights reserved.</p>
-        <div class="flex gap-4 text-xs text-gray-600"><a href="/zh-tw/index.html" class="hover:text-[#2E8B57] transition">繁體中文</a><span>|</span><a href="/index.html" class="hover:text-[#2E8B57] transition">English</a></div>
-      </div>
-    </div>
-  </footer>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PE Lamination Paper Bags | Waterproof Food Wraps - JJG Pack</title>
+<link href="/images/favicon.ico" rel="icon"/>
+<script src="/main.js" type="module"></script>
+<link href="/style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+TC:wght@400;500;600;700&amp;family=Noto+Serif+TC:wght@700;900&amp;family=Playfair+Display:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<meta content="Taiwan Paper Bag, Manufacturer, square bag, SOS bag, greaseproof bags, flat bag, satchel bags, gusset bags, handle shopping bags, eco-friendly packaging, PFAS-free, Juang Jia Guoo, wholesale paper bags, fast food packaging, bakery bags, kraft paper bags" name="keywords"/><meta content="PE Lamination Paper Bags | Waterproof Food Wraps - JJG Pack" property="og:title"/><meta content="PE laminated paper bags: burger pockets, deli wraps &amp; moisture-proof packaging. Greaseproof, waterproof, food-grade. OEM/ODM from Taiwan manufacturer." property="og:description"/><meta content="website" property="og:type"/><meta content="https://www.jjgpaperbag.com/products/pe-lamination.html" property="og:url"/><meta content="JJG Paper Bag | Juang Jia Guoo Co., Ltd." property="og:site_name"/><meta content="https://www.jjgpaperbag.com/images/index-logo.png" property="og:image"/><meta content="en_US" property="og:locale"/><meta content="summary_large_image" name="twitter:card"/><meta content="PE Lamination Paper Bags | Waterproof Food Wraps - JJG Pack" name="twitter:title"/><meta content="PE laminated paper bags: burger pockets, deli wraps &amp; moisture-proof packaging. Greaseproof, waterproof, food-grade. OEM/ODM from Taiwan manufacturer." name="twitter:description"/><meta content="https://www.jjgpaperbag.com/images/index-logo.png" name="twitter:image"/><link href="https://www.jjgpaperbag.com/products/pe-lamination.html" rel="canonical"/><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Juang Jia Guoo Co., Ltd. (JJG Pack)",
+  "alternateName": "壯佳果股份有限公司",
+  "url": "https://www.jjgpaperbag.com",
+  "logo": "https://www.jjgpaperbag.com/images/index-logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+886-4-26223215",
+    "contactType": "sales",
+    "email": "export@jjgpaperbag.com",
+    "areaServed": "Global",
+    "availableLanguage": [
+      "English",
+      "Chinese"
+    ]
+  },
+  "sameAs": [
+    "https://www.youtube.com/watch?v=1BklHKj_q0c"
+  ]
+}</script><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jjgpaperbag.com/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Products",
+      "item": "https://www.jjgpaperbag.com/products"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Pe Lamination",
+      "item": "https://www.jjgpaperbag.com/products/pe-lamination.html"
+    }
+  ]
+}</script><meta content="PE laminated paper bags: burger pockets, deli wraps &amp; moisture-proof packaging. Greaseproof, waterproof, food-grade. OEM/ODM from Taiwan manufacturer." name="description"/><meta content="index, follow" name="robots"/><meta content="zh_TW" property="og:locale:alternate"/><link href="https://www.jjgpaperbag.com/products/pe-lamination.html" hreflang="en" rel="alternate"/><link href="https://www.jjgpaperbag.com/zh-tw/products/pe-lamination.html" hreflang="zh-TW" rel="alternate"/><link href="https://www.jjgpaperbag.com/products/pe-lamination.html" hreflang="x-default" rel="alternate"/></head>
+<body class="bg-[#F5F0E8] text-[#1A1A1A] font-['Inter','Noto_Sans_TC',sans-serif]" x-data="{ mobileMenu: false  }">
+<header class="fixed top-0 left-0 right-0 z-50 glass transition-all duration-500">
+<nav class="max-w-[1440px] mx-auto px-6 h-[92px] flex items-center justify-between">
+<a class="flex items-center gap-3" href="/index.html"><img alt="JJG Paper Bag - Juang Jia Guoo Official Logo" class="h-[62px]" src="/images/index-logo.png"/></a>
+<div class="hidden lg:flex items-center gap-1">
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/index.html">Home</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/about.html">About Us</a>
+<a class="px-4 py-2 text-[#1A5C38] font-semibold text-[15px] relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-5 after:h-0.5 after:bg-[#1A5C38] after:rounded-full" href="/products.html">Products</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/news.html">News</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/catalog.html">E-Catalog</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/contact.html">Contact Us</a>
+</div>
+<div class="hidden lg:flex items-center gap-5">
+<div class="flex items-center gap-1 text-sm">
+<a class="text-[#1A5C38] font-semibold" href="/pe-lamination.html">EN</a>
+<a class="text-[#888] hover:text-[#1A5C38]" href="/zh-tw/pe-lamination.html">繁中</a>
+</div>
+<a class="btn-primary text-sm !py-2.5 !px-6 !rounded-lg" href="/contact.html"><span>Contact Us</span></a>
+</div>
+<button @click="mobileMenu=!mobileMenu" class="lg:hidden p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+</nav>
+<!-- Mobile Menu -->
+<div class="lg:hidden glass border-t border-gray-200/50" style="display:none" x-show="mobileMenu" x-transition:enter="transition ease-out duration-300" x-transition:enter-end="opacity-100 translate-y-0" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:leave="transition ease-in duration-200" x-transition:leave-end="opacity-0 -translate-y-2" x-transition:leave-start="opacity-100">
+<div class="px-6 py-5 space-y-1">
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/index.html">Home</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/about.html">About Us</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/products.html">Products</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/news.html">News</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/catalog.html">E-Catalog</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/contact.html">Contact Us</a>
+</div>
+</div>
+</header>
+<div class="pt-[92px]">
+<section class="max-w-[1440px] mx-auto px-6 py-12"><nav class="text-sm text-[#666] mb-8"><a href="/index.html">Home</a> › <a href="/products.html">Products</a> › <span class="text-[#1A5C38] font-medium">PE-Lamination Bag</span></nav><h1 class="font-['Playfair_Display',serif] text-4xl md:text-5xl font-bold mb-4">PE-Lamination Bag</h1><p class="text-lg text-[#666] max-w-2xl mb-12">Leak-proof PE-laminated bags for greasy and moist foods.</p><div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"><div class="bg-white rounded-2xl overflow-hidden shadow-premium card-hover group"><a class="aspect-[4/3] overflow-hidden block" href="/products/pe-lamination/l-bag.html"><img alt="L Bag" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="/proimages/detail/l-bag.jpg"/></a><div class="p-7"><span class="inline-block text-xs font-bold uppercase tracking-wider text-[#1A5C38] bg-[#1A5C38]/8 px-3 py-1 rounded-full mb-3">PE-Lamination Bag</span><h3 class="font-['Playfair_Display',serif] text-xl font-bold mb-2 group-hover:text-[#1A5C38] transition">L Bag</h3><p class="text-sm text-[#666] mb-5 line-clamp-2">Leak-proof and grease-resistant burger and sandwich pocket.</p><a class="inline-flex items-center gap-2 text-[#1A5C38] font-bold text-sm group-hover:gap-3 transition-all" href="/products/pe-lamination/l-bag.html">View Details<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a></div></div><div class="bg-white rounded-2xl overflow-hidden shadow-premium card-hover group"><a class="aspect-[4/3] overflow-hidden block" href="/products/pe-lamination/burger-pocket-paper-bag.html"><img alt="Burger pocket paper bag" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://www.jjgpaperbag.com/proimages/sr/product/PE-Lamination-paper-1.jpg"/></a><div class="p-7"><span class="inline-block text-xs font-bold uppercase tracking-wider text-[#1A5C38] bg-[#1A5C38]/8 px-3 py-1 rounded-full mb-3">PE-Lamination Bag</span><h3 class="font-['Playfair_Display',serif] text-xl font-bold mb-2 group-hover:text-[#1A5C38] transition">Burger pocket paper bag</h3><p class="text-sm text-[#666] mb-5 line-clamp-2">Perfect for burgers and sandwiches.</p><a class="inline-flex items-center gap-2 text-[#1A5C38] font-bold text-sm group-hover:gap-3 transition-all" href="/products/pe-lamination/burger-pocket-paper-bag.html">View Details<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a></div></div><div class="bg-white rounded-2xl overflow-hidden shadow-premium card-hover group"><a class="aspect-[4/3] overflow-hidden block" href="/products/pe-lamination/deli-wrap-paper.html"><img alt="Deli Wrap Paper" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://www.jjgpaperbag.com/proimages/sr/product/pro3-2.png"/></a><div class="p-7"><span class="inline-block text-xs font-bold uppercase tracking-wider text-[#1A5C38] bg-[#1A5C38]/8 px-3 py-1 rounded-full mb-3">PE-Lamination Bag</span><h3 class="font-['Playfair_Display',serif] text-xl font-bold mb-2 group-hover:text-[#1A5C38] transition">Deli Wrap Paper</h3><p class="text-sm text-[#666] mb-5 line-clamp-2">Multi-purpose deli wrapping sheets.</p><a class="inline-flex items-center gap-2 text-[#1A5C38] font-bold text-sm group-hover:gap-3 transition-all" href="/products/pe-lamination/deli-wrap-paper.html">View Details<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a></div></div><div class="bg-white rounded-2xl overflow-hidden shadow-premium card-hover group"><a class="aspect-[4/3] overflow-hidden block" href="/products/pe-lamination/toast-bags.html"><img alt="Toast Bags" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://www.jjgpaperbag.com/proimages/sr/0901-4.jpg"/></a><div class="p-7"><span class="inline-block text-xs font-bold uppercase tracking-wider text-[#1A5C38] bg-[#1A5C38]/8 px-3 py-1 rounded-full mb-3">PE-Lamination Bag</span><h3 class="font-['Playfair_Display',serif] text-xl font-bold mb-2 group-hover:text-[#1A5C38] transition">Toast Bags</h3><p class="text-sm text-[#666] mb-5 line-clamp-2">Reliable toast and snack bags.</p><a class="inline-flex items-center gap-2 text-[#1A5C38] font-bold text-sm group-hover:gap-3 transition-all" href="/products/pe-lamination/toast-bags.html">View Details<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a></div></div></div></section>
+</div>
+<footer class="bg-[#111] text-gray-400 pt-20 pb-8">
+<div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/10">
+<div><img alt="JJG Paper Bag - Juang Jia Guoo Official Logo" class="h-[68px] mb-5 brightness-200" src="/images/index-logo.png"/><p class="text-sm leading-relaxed text-gray-500">Professional paper bag manufacturer in Taiwan with 70+ years of experience.</p></div>
+<div><h4 class="text-white font-bold mb-5 text-sm tracking-[0.15em] uppercase">Quick Links</h4><ul class="space-y-3 text-sm"><li><a class="hover:text-[#2E8B57] transition" href="/index.html">Home</a></li><li><a class="hover:text-[#2E8B57] transition" href="/products.html">Products</a></li><li><a class="hover:text-[#2E8B57] transition" href="/contact.html">Contact Us</a></li></ul></div>
+<div><h4 class="text-white font-bold mb-5 text-sm tracking-[0.15em] uppercase">Products</h4><ul class="space-y-3 text-sm"><li><a class="hover:text-[#2E8B57] transition" href="/products.html">All Products</a></li></ul></div>
+<div><h4 class="text-white font-bold mb-5 text-sm tracking-[0.15em] uppercase">Contact Info</h4><ul class="space-y-4 text-sm"><li>📍 No.6, You 9th Rd. Dajia Dist., Taichung City 43769 Taiwan</li><li>📞 +886-4-26223215</li><li>✉️ export@jjgpaperbag.com</li></ul></div>
+</div>
+<div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-gray-600">© 2026 壯佳果股份有限公司 Juang Jia Guoo Co., Ltd. All rights reserved.</p>
+<div class="flex gap-4 text-xs text-gray-600"><a class="hover:text-[#2E8B57] transition" href="/zh-tw/index.html">繁體中文</a><span>|</span><a class="hover:text-[#2E8B57] transition" href="/index.html">English</a></div>
+</div>
+</div>
+</footer>
 </body>
 </html>

@@ -1,0 +1,14 @@
+# robots.txt for JJG Paper Bag - Juang Jia Guoo Co., Ltd.
+# https://www.jjgpaperbag.com
+
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /.git/
+
+# Sitemaps
+Sitemap: https://www.jjgpaperbag.com/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1

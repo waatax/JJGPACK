@@ -1,187 +1,204 @@
 <!DOCTYPE html>
+
 <html lang="zh-TW">
-
 <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>關於我們 | 壯佳果包裝 - JJG Paper Bag</title>
-        <meta name="description" content="認識壯佳果股份有限公司，台灣專業紙袋製造商，超過70年經驗。公司沿革、品質認證及製造實力介紹。" />
-        <link rel="icon" href="/images/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@700;900&family=Playfair+Display:wght@400;700;900&display=swap"
-                rel="stylesheet">
-  <script type="module" src="/main.js"></script>
-  <link rel="stylesheet" href="/style.css">
-</head>
-
-<body x-data="{ mobileMenu: false }" class="bg-[#F5F0E8] text-[#1A1A1A] font-['Inter','Noto_Sans_TC',sans-serif]">
-        <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
-                <nav class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 h-[88px] flex items-center justify-between"><a
-                                href="/zh-tw/index.html" class="flex items-center gap-2"><img src="/images/index-logo.png"
-                                        alt="壯佳果" class="h-[68px]"></a>
-                        <div class="hidden lg:flex items-center gap-1">
-                                <a href="/zh-tw/index.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">首頁</a>
-                                <a href="/zh-tw/about.html" class="relative px-4 py-2 text-[#1A5C38] font-semibold text-[15px] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-5 after:h-0.5 after:bg-[#1A5C38] after:rounded-full">關於我們</a>
-                                <a href="/zh-tw/products.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">產品介紹</a>
-                                <a href="/zh-tw/news.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">最新消息</a>
-                                <a href="/zh-tw/catalog.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">型錄EDM</a>
-                                <a href="/zh-tw/contact.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">聯絡我們</a>
-                        </div>
-                        <div class="hidden lg:flex items-center gap-4"><a href="/about.html"
-                                        class="text-[#666] text-sm font-medium">EN</a><span
-                                        class="text-gray-300">|</span><a href="/zh-tw/about.html"
-                                        class="text-[#1A5C38] text-sm font-bold">繁中</a><a href="/zh-tw/contact.html"
-                                        class="bg-[#1A5C38] hover:bg-[#2E8B57] text-white px-5 py-2.5 rounded-lg font-bold text-sm tracking-wider transition shadow">聯絡我們</a>
-                        </div><button @click="mobileMenu=!mobileMenu" class="lg:hidden p-2"><svg class="w-6 h-6"
-                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M4 6h16M4 12h16M4 18h16" />
-                                </svg></button>
-                </nav>
-    <!-- Mobile Menu -->
-    <div x-show="mobileMenu" x-transition:enter="transition ease-out duration-300"
-      x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
-      x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100"
-      x-transition:leave-end="opacity-0 -translate-y-2" class="lg:hidden glass border-t border-gray-200/50"
-      style="display:none">
-      <div class="px-6 py-5 space-y-1">
-        <a href="/zh-tw/index.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">首頁</a>
-        <a href="/zh-tw/about.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">關於我們</a>
-        <a href="/zh-tw/products.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">產品介紹</a>
-        <a href="/zh-tw/news.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">最新消息</a>
-        <a href="/zh-tw/catalog.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">型錄EDM</a>
-        <a href="/zh-tw/contact.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">聯絡我們</a>
-      </div>
-    </div>
-        </header>
-        <div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 py-4">
-                <nav class="text-sm text-[#666]"><a href="/zh-tw/index.html" class="hover:text-[#2E8B57]">首頁</a> <span
-                                class="mx-2">›</span> <span class="text-[#1A5C38] font-medium">關於我們</span></nav>
-        </div>
-
-        <section class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 pb-20">
-                <div class="grid lg:grid-cols-2 gap-16 items-center">
-                        <div>
-                                <p class="text-[#B5813C] text-sm font-semibold tracking-widest mb-3">公司簡介</p>
-                                <h1 class="font-['Noto_Serif_TC',serif] text-3xl md:text-5xl font-bold mb-6">關於壯佳果</h1>
-                                <p class="text-[#666] leading-relaxed mb-4">壯佳果股份有限公司是台灣專業紙袋製造商，擁有超過 70 年的生產經驗，專精於各式食品紙袋及商業紙袋的研發與製造。</p>
-                                <p class="text-[#666] leading-relaxed mb-4">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>關於壯佳果 | 70年專業紙袋製造工廠 - JJG Paper Bag</title>
+<meta content="認識壯佳果企業70年製袋歷史，通過ISO 22000、HACCP、FSC、FSSC 22000認證。月產能1.65億件，服務全球100+國家。" name="description"/>
+<link href="/images/favicon.ico" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+TC:wght@400;500;600;700&amp;family=Noto+Serif+TC:wght@700;900&amp;family=Playfair+Display:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="/main.js" type="module"></script>
+<link href="/style.css" rel="stylesheet"/>
+<meta content="台灣紙袋, 製造商, 工廠, 方底袋, SOS袋, 防油紙袋, 平口袋, 側邊袋, 折角袋, 手提購物袋, 環保包裝, 無PFAS, 壯佳果, 紙袋批發, 食品包裝袋, 烘焙紙袋, 牛皮紙袋" name="keywords"/><meta content="關於壯佳果 | 70年專業紙袋製造工廠 - JJG Paper Bag" property="og:title"/><meta content="認識壯佳果企業70年製袋歷史，通過ISO 22000、HACCP、FSC、FSSC 22000認證。月產能1.65億件，服務全球100+國家。" property="og:description"/><meta content="website" property="og:type"/><meta content="https://www.jjgpaperbag.com/zh-tw/about.html" property="og:url"/><meta content="JJG Paper Bag | Juang Jia Guoo Co., Ltd." property="og:site_name"/><meta content="https://www.jjgpaperbag.com/images/index-logo.png" property="og:image"/><meta content="zh_TW" property="og:locale"/><meta content="summary_large_image" name="twitter:card"/><meta content="關於壯佳果 | 70年專業紙袋製造工廠 - JJG Paper Bag" name="twitter:title"/><meta content="認識壯佳果企業70年製袋歷史，通過ISO 22000、HACCP、FSC、FSSC 22000認證。月產能1.65億件，服務全球100+國家。" name="twitter:description"/><meta content="https://www.jjgpaperbag.com/images/index-logo.png" name="twitter:image"/><link href="https://www.jjgpaperbag.com/zh-tw/about.html" rel="canonical"/><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Juang Jia Guoo Co., Ltd. (JJG Pack)",
+  "alternateName": "壯佳果股份有限公司",
+  "url": "https://www.jjgpaperbag.com",
+  "logo": "https://www.jjgpaperbag.com/images/index-logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+886-4-26223215",
+    "contactType": "sales",
+    "email": "export@jjgpaperbag.com",
+    "areaServed": "Global",
+    "availableLanguage": [
+      "English",
+      "Chinese"
+    ]
+  },
+  "sameAs": [
+    "https://www.youtube.com/watch?v=1BklHKj_q0c"
+  ]
+}</script><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jjgpaperbag.com/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Zh Tw",
+      "item": "https://www.jjgpaperbag.com/zh-tw"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "About",
+      "item": "https://www.jjgpaperbag.com/zh-tw/about.html"
+    }
+  ]
+}</script><meta content="index, follow" name="robots"/><meta content="en_US" property="og:locale:alternate"/><link href="https://www.jjgpaperbag.com/about.html" hreflang="en" rel="alternate"/><link href="https://www.jjgpaperbag.com/zh-tw/about.html" hreflang="zh-TW" rel="alternate"/><link href="https://www.jjgpaperbag.com/about.html" hreflang="x-default" rel="alternate"/></head>
+<body class="bg-[#F5F0E8] text-[#1A1A1A] font-['Inter','Noto_Sans_TC',sans-serif]" x-data="{ mobileMenu: false }">
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
+<nav class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 h-[88px] flex items-center justify-between"><a class="flex items-center gap-2" href="/zh-tw/index.html"><img alt="壯佳果" class="h-[68px]" src="/images/index-logo.png"/></a>
+<div class="hidden lg:flex items-center gap-1">
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/index.html">首頁</a>
+<a class="relative px-4 py-2 text-[#1A5C38] font-semibold text-[15px] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-5 after:h-0.5 after:bg-[#1A5C38] after:rounded-full" href="/zh-tw/about.html">關於我們</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/products.html">產品介紹</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/news.html">最新消息</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/catalog.html">型錄EDM</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/contact.html">聯絡我們</a>
+</div>
+<div class="hidden lg:flex items-center gap-4"><a class="text-[#666] text-sm font-medium" href="/about.html">EN</a><span class="text-gray-300">|</span><a class="text-[#1A5C38] text-sm font-bold" href="/zh-tw/about.html">繁中</a><a class="bg-[#1A5C38] hover:bg-[#2E8B57] text-white px-5 py-2.5 rounded-lg font-bold text-sm tracking-wider transition shadow" href="/zh-tw/contact.html">聯絡我們</a>
+</div><button @click="mobileMenu=!mobileMenu" class="lg:hidden p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg></button>
+</nav>
+<!-- Mobile Menu -->
+<div class="lg:hidden glass border-t border-gray-200/50" style="display:none" x-show="mobileMenu" x-transition:enter="transition ease-out duration-300" x-transition:enter-end="opacity-100 translate-y-0" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:leave="transition ease-in duration-200" x-transition:leave-end="opacity-0 -translate-y-2" x-transition:leave-start="opacity-100">
+<div class="px-6 py-5 space-y-1">
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/index.html">首頁</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/about.html">關於我們</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/products.html">產品介紹</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/news.html">最新消息</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/catalog.html">型錄EDM</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/contact.html">聯絡我們</a>
+</div>
+</div>
+</header>
+<div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 py-4">
+<nav class="text-sm text-[#666]"><a class="hover:text-[#2E8B57]" href="/zh-tw/index.html">首頁</a> <span class="mx-2">›</span> <span class="text-[#1A5C38] font-medium">關於我們</span></nav>
+</div>
+<section class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 pb-20">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<p class="text-[#B5813C] text-sm font-semibold tracking-widest mb-3">公司簡介</p>
+<h1 class="font-['Noto_Serif_TC',serif] text-3xl md:text-5xl font-bold mb-6">關於壯佳果</h1>
+<p class="text-[#666] leading-relaxed mb-4">壯佳果股份有限公司是台灣專業紙袋製造商，擁有超過 70 年的生產經驗，專精於各式食品紙袋及商業紙袋的研發與製造。</p>
+<p class="text-[#666] leading-relaxed mb-4">
                                         我們提供防油紙袋、淋膜紙袋、牛皮紙袋、白牛皮紙袋、手提紙袋、購物袋及客製印刷紙袋，滿足餐飲業、連鎖品牌、食品工廠、零售通路及各類企業客戶的需求。</p>
-                                <p class="text-[#666] leading-relaxed">
+<p class="text-[#666] leading-relaxed">
                                         秉持「品質、安全、穩定供應」的核心價值，我們的產品符合食品安全標準及國際認證，確保穩定的生產能力、大量訂單支援，以及可靠的交貨時程。</p>
-                        </div>
-                        <div>
-                                <iframe class="w-full aspect-video rounded-2xl shadow-lg" src="https://www.youtube.com/embed/bdZVtClA-Lc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                </div>
-        </section>
-
-        <section id="history" class="bg-white py-16 md:py-20">
-                <div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8">
-                        <div class="text-center mb-16">
-                                <p class="text-[#B5813C] text-sm font-semibold tracking-widest mb-3">發展歷程</p>
-                                <h2 class="font-['Noto_Serif_TC',serif] text-3xl md:text-4xl font-bold">公司沿革</h2>
-                        </div>
-                        <div class="max-w-3xl mx-auto space-y-8">
-                                <div class="flex gap-6 items-start">
-                                        <div
-                                                class="bg-[#1A5C38] text-white font-bold text-sm px-4 py-2 rounded-lg min-w-[80px] text-center">
+</div>
+<div>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="w-full aspect-video rounded-2xl shadow-lg" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/bdZVtClA-Lc" title="YouTube video player"></iframe>
+</div>
+</div>
+</section>
+<section class="bg-white py-16 md:py-20" id="history">
+<div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<p class="text-[#B5813C] text-sm font-semibold tracking-widest mb-3">發展歷程</p>
+<h2 class="font-['Noto_Serif_TC',serif] text-3xl md:text-4xl font-bold">公司沿革</h2>
+</div>
+<div class="max-w-3xl mx-auto space-y-8">
+<div class="flex gap-6 items-start">
+<div class="bg-[#1A5C38] text-white font-bold text-sm px-4 py-2 rounded-lg min-w-[80px] text-center">
                                                 1960s</div>
-                                        <div>
-                                                <h3 class="font-bold text-lg mb-1">公司創立</h3>
-                                                <p class="text-[#666] text-sm">壯佳果股份有限公司於台中成立，開始紙袋製造業務。</p>
-                                        </div>
-                                </div>
-                                <div class="flex gap-6 items-start">
-                                        <div
-                                                class="bg-[#B5813C] text-white font-bold text-sm px-4 py-2 rounded-lg min-w-[80px] text-center">
+<div>
+<h3 class="font-bold text-lg mb-1">公司創立</h3>
+<p class="text-[#666] text-sm">壯佳果股份有限公司於台中成立，開始紙袋製造業務。</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="bg-[#B5813C] text-white font-bold text-sm px-4 py-2 rounded-lg min-w-[80px] text-center">
                                                 1980s</div>
-                                        <div>
-                                                <h3 class="font-bold text-lg mb-1">拓展外銷市場</h3>
-                                                <p class="text-[#666] text-sm">擴大營運規模，建立全球出口能力，服務國際市場。</p>
-                                        </div>
-                                </div>
-                                <div class="flex gap-6 items-start">
-                                        <div
-                                                class="bg-[#1A5C38] text-white font-bold text-sm px-4 py-2 rounded-lg min-w-[80px] text-center">
+<div>
+<h3 class="font-bold text-lg mb-1">拓展外銷市場</h3>
+<p class="text-[#666] text-sm">擴大營運規模，建立全球出口能力，服務國際市場。</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="bg-[#1A5C38] text-white font-bold text-sm px-4 py-2 rounded-lg min-w-[80px] text-center">
                                                 2000s</div>
-                                        <div>
-                                                <h3 class="font-bold text-lg mb-1">取得國際認證</h3>
-                                                <p class="text-[#666] text-sm">取得 ISO 22000、HACCP、FSC 及 FSSC 22000
+<div>
+<h3 class="font-bold text-lg mb-1">取得國際認證</h3>
+<p class="text-[#666] text-sm">取得 ISO 22000、HACCP、FSC 及 FSSC 22000
                                                         等食品安全與永續發展認證。</p>
-                                        </div>
-                                </div>
-                                <div class="flex gap-6 items-start">
-                                        <div
-                                                class="bg-[#B5813C] text-white font-bold text-sm px-4 py-2 rounded-lg min-w-[80px] text-center">
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="bg-[#B5813C] text-white font-bold text-sm px-4 py-2 rounded-lg min-w-[80px] text-center">
                                                 2020s</div>
-                                        <div>
-                                                <h3 class="font-bold text-lg mb-1">無 PFAS 創新</h3>
-                                                <p class="text-[#666] text-sm">率先推出無 PFAS、可生物分解的紙袋技術。產品行銷全球超過 100 個國家。
+<div>
+<h3 class="font-bold text-lg mb-1">無 PFAS 創新</h3>
+<p class="text-[#666] text-sm">率先推出無 PFAS、可生物分解的紙袋技術。產品行銷全球超過 100 個國家。
                                                 </p>
-                                        </div>
-                                </div>
-                        </div>
-                </div>
-        </section>
-
-        <section id="certification" class="py-16 md:py-20">
-                <div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
-                        <p class="text-[#B5813C] text-sm font-semibold tracking-widest mb-3">品質保證</p>
-                        <h2 class="font-['Noto_Serif_TC',serif] text-3xl md:text-4xl font-bold mb-10">品質認證</h2>
-                        <div class="bg-white rounded-2xl shadow-sm p-10">
-                                <img src="/images/footer-iso_v2.png" alt="ISO HACCP FSC 認證"
-                                        class="mx-auto h-24 object-contain mb-6">
-                                <p class="text-[#666] max-w-2xl mx-auto">我們的產品符合 ISO 22000、HACCP、FSC 及 FSSC 22000
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-20" id="certification">
+<div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
+<p class="text-[#B5813C] text-sm font-semibold tracking-widest mb-3">品質保證</p>
+<h2 class="font-['Noto_Serif_TC',serif] text-3xl md:text-4xl font-bold mb-10">品質認證</h2>
+<div class="bg-white rounded-2xl shadow-sm p-10">
+<img alt="ISO 22000, HACCP, FSC, FSSC 22000 International Certifications for Paper Bag Manufacturing" class="mx-auto h-24 object-contain mb-6" src="/images/footer-iso_v2.png"/>
+<p class="text-[#666] max-w-2xl mx-auto">我們的產品符合 ISO 22000、HACCP、FSC 及 FSSC 22000
                                         標準，確保所有紙袋產品達到最高的食品安全及環境永續水準。</p>
-                        </div>
-                </div>
-        </section>
-
-        <section class="bg-[#1A5C38] py-16 md:py-20">
-                <div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
-                        <h2 class="font-['Noto_Serif_TC',serif] text-3xl font-bold text-white mb-4">與我們合作</h2>
-                        <p class="text-white/80 text-lg mb-8">歡迎批發詢價及 OEM/ODM 合作機會。</p><a href="/zh-tw/contact.html"
-                                class="bg-white text-[#1A5C38] px-10 py-3.5 rounded-lg font-bold tracking-wider hover:bg-[#F5F0E8] transition inline-block">聯絡我們</a>
-                </div>
-        </section>
-
-        <footer class="bg-[#1A1A1A] text-gray-400 pt-16 pb-8">
-                <div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8">
-                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-800">
-                                <div><img src="/images/index-logo.png" alt="JJG" class="h-10 mb-4 brightness-200">
-                                        <p class="text-sm">台灣專業紙袋製造商，超過 70 年經驗。</p>
-                                </div>
-                                <div>
-                                        <h4 class="text-white font-bold mb-4 text-sm tracking-wider">快速連結</h4>
-                                        <ul class="space-y-2 text-sm">
-                                                <li><a href="/zh-tw/index.html" class="hover:text-[#2E8B57]">首頁</a></li>
-                                                <li><a href="/zh-tw/about.html" class="hover:text-[#2E8B57]">關於我們</a>
-                                                </li>
-                                                <li><a href="/zh-tw/products.html" class="hover:text-[#2E8B57]">產品介紹</a>
-                                                </li>
-                                        </ul>
-                                </div>
-                                <div>
-                                        <h4 class="text-white font-bold mb-4 text-sm tracking-wider">產品系列</h4>
-                                        <ul class="space-y-2 text-sm">
-                                                <li><a href="/zh-tw/products.html" class="hover:text-[#2E8B57]">全部產品</a>
-                                                </li>
-                                        </ul>
-                                </div>
-                                <div>
-                                        <h4 class="text-white font-bold mb-4 text-sm tracking-wider">聯絡資訊</h4>
-                                        <ul class="space-y-2 text-sm">
-                                                <li>📍 台中市大甲區游九路6號</li>
-                                                <li>📞 +886-4-26223215</li>
-                                                <li>✉️ export@jjgpaperbag.com</li>
-                                        </ul>
-                                </div>
-                        </div>
-                        <div class="pt-6 text-center text-xs text-gray-600">© 2026 壯佳果股份有限公司 版權所有</div>
-                </div>
-        </footer>
+</div>
+</div>
+</section>
+<section class="bg-[#1A5C38] py-16 md:py-20">
+<div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
+<h2 class="font-['Noto_Serif_TC',serif] text-3xl font-bold text-white mb-4">與我們合作</h2>
+<p class="text-white/80 text-lg mb-8">歡迎批發詢價及 OEM/ODM 合作機會。</p><a class="bg-white text-[#1A5C38] px-10 py-3.5 rounded-lg font-bold tracking-wider hover:bg-[#F5F0E8] transition inline-block" href="/zh-tw/contact.html">聯絡我們</a>
+</div>
+</section>
+<footer class="bg-[#1A1A1A] text-gray-400 pt-16 pb-8">
+<div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-800">
+<div><img alt="JJG Paper Bag - Juang Jia Guoo Official Logo" class="h-10 mb-4 brightness-200" src="/images/index-logo.png"/>
+<p class="text-sm">台灣專業紙袋製造商，超過 70 年經驗。</p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4 text-sm tracking-wider">快速連結</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-[#2E8B57]" href="/zh-tw/index.html">首頁</a></li>
+<li><a class="hover:text-[#2E8B57]" href="/zh-tw/about.html">關於我們</a>
+</li>
+<li><a class="hover:text-[#2E8B57]" href="/zh-tw/products.html">產品介紹</a>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4 text-sm tracking-wider">產品系列</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-[#2E8B57]" href="/zh-tw/products.html">全部產品</a>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4 text-sm tracking-wider">聯絡資訊</h4>
+<ul class="space-y-2 text-sm">
+<li>📍 台中市大甲區游九路6號</li>
+<li>📞 +886-4-26223215</li>
+<li>✉️ export@jjgpaperbag.com</li>
+</ul>
+</div>
+</div>
+<div class="pt-6 text-center text-xs text-gray-600">© 2026 壯佳果股份有限公司 版權所有</div>
+</div>
+</footer>
 </body>
-
 </html>

@@ -1,218 +1,254 @@
 <!DOCTYPE html>
+
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>【紙袋材質全攻略】從質感包裝到機能應用的專業指南 | 壯佳果包裝</title>
-  <meta name="description" content="紙袋材質完整選購指南：環保牛皮系列、機能性食品專用系列、精緻銅版印刷系列，協助您精準選購。" />
-  <link rel="icon" href="/images/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@700;900&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
-  <script type="module" src="/main.js"></script>
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body x-data="{ mobileMenu: false }" class="bg-[#F5F0E8] text-[#1A1A1A] font-['Inter','Noto_Sans_TC',sans-serif]">
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
-    <nav class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 h-[88px] flex items-center justify-between">
-      <a href="/zh-tw/index.html" class="flex items-center gap-2"><img src="/images/index-logo.png" alt="壯佳果" class="h-[68px]"></a>
-      <div class="hidden lg:flex items-center gap-1">
-        <a href="/zh-tw/index.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">首頁</a>
-        <a href="/zh-tw/about.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">關於我們</a>
-        <a href="/zh-tw/products.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">產品介紹</a>
-        <a href="/zh-tw/news.html" class="relative px-4 py-2 text-[#1A5C38] font-semibold text-[15px] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-5 after:h-0.5 after:bg-[#1A5C38] after:rounded-full">最新消息</a>
-        <a href="/zh-tw/catalog.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">型錄EDM</a>
-        <a href="/zh-tw/contact.html" class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all">聯絡我們</a>
-      </div>
-      <div class="hidden lg:flex items-center gap-4">
-        <a href="/zh-tw/contact.html" class="bg-[#1A5C38] hover:bg-[#2E8B57] text-white px-5 py-2.5 rounded-lg font-bold text-sm tracking-wider transition shadow">聯絡我們</a>
-      </div>
-      <button @click="mobileMenu=!mobileMenu" class="lg:hidden p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-    </nav>
-    <div x-show="mobileMenu" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0 -translate-y-2" class="lg:hidden glass border-t border-gray-200/50" style="display:none">
-      <div class="px-6 py-5 space-y-1">
-        <a href="/zh-tw/index.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">首頁</a>
-        <a href="/zh-tw/about.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">關於我們</a>
-        <a href="/zh-tw/products.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">產品介紹</a>
-        <a href="/zh-tw/news.html" class="block py-2 px-3 rounded bg-[#F5F0E8] font-semibold text-[#1A5C38]">最新消息</a>
-        <a href="/zh-tw/catalog.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">型錄EDM</a>
-        <a href="/zh-tw/contact.html" class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors">聯絡我們</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Breadcrumb -->
-  <div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 py-4">
-    <nav class="text-sm text-[#666]"><a href="/zh-tw/index.html" class="hover:text-[#2E8B57]">首頁</a> <span class="mx-2">›</span> <a href="/zh-tw/news.html#wiki" class="hover:text-[#2E8B57]">最新消息</a> <span class="mx-2">›</span> <span class="text-[#1A5C38] font-medium">紙袋小百科</span></nav>
-  </div>
-
-  <!-- Article Header -->
-  <section class="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8 pb-8">
-    <span class="inline-block text-xs font-bold uppercase tracking-wider text-white bg-[#2E8B57] px-4 py-1.5 rounded-full mb-4">紙袋小百科</span>
-    <h1 class="font-['Noto_Serif_TC',serif] text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">【紙袋材質全攻略】<br class="hidden md:block">從質感包裝到機能應用的專業指南</h1>
-    <p class="text-[#666] text-lg leading-relaxed">紙袋不只是容器，更是品牌的延伸。無論是追求精緻印刷的購物袋，還是講究食安功能的食品袋，選對材質才能發揮最大效益。我們綜合了業界最常見的紙材，協助您精準選購。</p>
-  </section>
-
-  <!-- Series 1: 環保與特殊牛皮系列 -->
-  <section class="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8 pb-10">
-    <div class="bg-white rounded-2xl shadow-sm p-8 md:p-10 border border-gray-100">
-      <div class="flex flex-wrap items-center gap-3 mb-4">
-        <h2 class="font-['Noto_Serif_TC',serif] text-2xl font-bold text-[#1A5C38]">環保與特殊牛皮系列</h2>
-        <span class="text-xs font-semibold tracking-wider text-[#888] uppercase">Eco-Friendly & Kraft</span>
-      </div>
-      <p class="text-sm text-[#B5813C] font-semibold mb-3">主打特色：天然質感、強韌耐用、文青風格、環保趨勢</p>
-      <p class="text-[#555] text-sm leading-relaxed mb-8">此系列保留了紙張的纖維觸感，無毒且易於回收。除了標準的黃/白牛皮外，針對不同印刷與環保需求，還有以下進階選擇：</p>
-
-      <div class="space-y-8">
-        <!-- 1. 單光白牛皮紙 -->
-        <div class="border-l-4 border-[#1A5C38] pl-6">
-          <h3 class="font-bold text-lg mb-3">1. 單光白牛皮紙 <span class="text-[#888] text-sm font-normal">(One-side Glazed White Kraft)</span></h3>
-          <p class="text-[#555] text-sm leading-relaxed mb-2"><strong class="text-[#D4710B]">材質特色：</strong>這是一種「雙面性格」的紙張。正面經過壓光處理，呈現光滑亮面，印刷色彩比一般牛皮紙更鮮豔、解析度更好；背面則保留了牛皮紙原本的粗糙啞光質感。</p>
-          <p class="text-[#555] text-sm leading-relaxed mb-2"><strong class="text-[#2E8B57]">優勢：</strong>結合了銅版紙的印刷效果與牛皮紙的強韌度。因為本身帶有光澤，通常不需要額外上膜，就能擁有不錯的質感，且抗撕裂性極佳。</p>
-          <p class="text-[#888] text-sm"><strong>適用推薦：</strong>服飾店提袋、需要全彩印刷但想保留紙質手感的品牌。</p>
-        </div>
-
-        <!-- 2. 回收牛皮紙 -->
-        <div class="border-l-4 border-[#1A5C38] pl-6">
-          <h3 class="font-bold text-lg mb-3">2. 回收牛皮紙 <span class="text-[#888] text-sm font-normal">(Recycled Kraft Paper)</span></h3>
-          <p class="text-[#555] text-sm leading-relaxed mb-2"><strong class="text-[#D4710B]">材質特色：</strong>由再生紙漿（如廢紙箱、報紙等）重新製漿而成。紙色通常較為暗沉或帶有灰階，表面可能會有細小的纖維雜點，這是再生紙特有的「環保印記」。</p>
-          <p class="text-[#555] text-sm leading-relaxed mb-2"><strong class="text-[#2E8B57]">優勢：</strong>100%體現循環經濟與永續環保理念，價格通常較具優勢。雖然抗拉力略遜於純木漿牛皮紙，但足以應付一般輕量至中量物品。</p>
-          <p class="text-[#888] text-sm"><strong>適用推薦：</strong>主打有機、天然、環保訴求的品牌，或文創市集包裝。</p>
-        </div>
-
-        <!-- 3. 赤牛皮紙 / 白牛皮紙 -->
-        <div class="border-l-4 border-[#1A5C38] pl-6">
-          <h3 class="font-bold text-lg mb-3">3. 赤牛皮紙 / 白牛皮紙 <span class="text-[#888] text-sm font-normal">(Standard Kraft)</span></h3>
-          <p class="text-[#555] text-sm leading-relaxed mb-2"><strong class="text-[#D4710B]">赤牛皮：</strong>呈天然木褐色，風格復古粗獷，耐磨又耐用，最適合深色單色印刷（黑、咖、深藍）。</p>
-          <p class="text-[#555] text-sm leading-relaxed"><strong class="text-[#D4710B]">白牛皮：</strong>純淨素雅，紙質強韌，適合喜歡極簡風格或日系設計的品牌。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Series 2: 機能性與食品專用系列 -->
-  <section class="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8 pb-10">
-    <div class="bg-white rounded-2xl shadow-sm p-8 md:p-10 border border-gray-100">
-      <div class="flex flex-wrap items-center gap-3 mb-4">
-        <h2 class="font-['Noto_Serif_TC',serif] text-2xl font-bold text-[#D4710B]">機能性與食品專用系列</h2>
-        <span class="text-xs font-semibold tracking-wider text-[#888] uppercase">Functional & Food Grade</span>
-      </div>
-      <p class="text-sm text-[#B5813C] font-semibold mb-3">主打特色：防水防油、食安級認證、鎖住美味</p>
-      <p class="text-[#555] text-sm leading-relaxed mb-8">針對餐飲與烘焙業者，紙袋需要具備阻隔水氣與油脂的功能。此系列紙張多經過特殊處理，確保包裝不滲漏。</p>
-
-      <div class="space-y-8">
-        <!-- 1. 防油紙 -->
-        <div class="border-l-4 border-[#D4710B] pl-6">
-          <h3 class="font-bold text-lg mb-3">1. 防油紙 <span class="text-[#888] text-sm font-normal">(Greaseproof Paper)</span></h3>
-          <p class="text-[#555] text-sm leading-relaxed mb-2"><strong class="text-[#D4710B]">材質特色：</strong>紙張纖維經過高度打漿與特殊處理，降低了紙張的孔隙率，能有效阻擋油脂滲透，但仍保有一定的透氣性。</p>
-          <p class="text-[#555] text-sm leading-relaxed mb-2"><strong class="text-[#2E8B57]">優勢：</strong>不含塑膠淋膜，氣性好，能讓剛炸好的食物熱氣散出，避免袋內產生冷凝水導致食物變軟。</p>
-          <p class="text-[#888] text-sm"><strong>適用推薦：</strong>雞排、甜甜圈、燒餅油條、麵包等容易出油的熟食包裝。</p>
-        </div>
-
-        <!-- 2. PE 淋膜紙 -->
-        <div class="border-l-4 border-[#D4710B] pl-6">
-          <h3 class="font-bold text-lg mb-3">2. PE 淋膜紙 <span class="text-[#888] text-sm font-normal">(PE Coated Paper)</span></h3>
-          <p class="text-[#555] text-sm leading-relaxed mb-2"><strong class="text-[#D4710B]">材質特色：</strong>在紙張表面複合一層極薄的聚乙烯（PE）塑料膜。這層膜賦予了紙張「完全阻隔」的能力。</p>
-          <p class="text-[#555] text-sm leading-relaxed mb-2"><strong class="text-[#2E8B57]">優勢：</strong>具備優異的防水、防油與防潮功能。與防油紙不同的是，它能盛裝含有少量湯汁或醬料的食物而不會軟爛破底。</p>
-          <p class="text-[#888] text-sm"><strong>適用推薦：</strong>漢堡紙、三明治袋、飲料提袋，或需要高度防潮的冷凍食品外袋。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Series 3: 精緻印刷銅版系列 -->
-  <section class="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8 pb-10">
-    <div class="bg-white rounded-2xl shadow-sm p-8 md:p-10 border border-gray-100">
-      <div class="flex flex-wrap items-center gap-3 mb-4">
-        <h2 class="font-['Noto_Serif_TC',serif] text-2xl font-bold text-[#6B21A8]">精緻印刷銅版系列</h2>
-        <span class="text-xs font-semibold tracking-wider text-[#888] uppercase">Coated Art Paper</span>
-      </div>
-      <p class="text-sm text-[#B5813C] font-semibold mb-3">主打特色：色彩飽和、奢華質感、硬挺成型</p>
-      <p class="text-[#555] text-sm leading-relaxed mb-8">當您的需求是「像照片一樣清晰」或「精品般的觸感」，此系列是唯一首選。</p>
-
-      <div class="space-y-8">
-        <!-- 1. 銅版紙 -->
-        <div class="border-l-4 border-[#6B21A8] pl-6">
-          <h3 class="font-bold text-lg mb-3">1. 銅版紙 + 上膜 <span class="text-[#888] text-sm font-normal">(Art Paper)</span></h3>
-          <p class="text-[#555] text-sm leading-relaxed">表面潔白平滑，吸墨性均勻，能完美呈現細膩的漸層與亮麗色彩。通常搭配「亮膜」或「霧膜」加工，增加耐用度與高級感。</p>
-        </div>
-
-        <!-- 2. 銅西卡紙 -->
-        <div class="border-l-4 border-[#6B21A8] pl-6">
-          <h3 class="font-bold text-lg mb-3">2. 銅西卡紙 <span class="text-[#888] text-sm font-normal">(Ivory Board)</span></h3>
-          <p class="text-[#555] text-sm leading-relaxed">加厚版的銅版紙，紙身硬挺厚實，成型後線條俐落，專為高價位精品與禮盒設計，提供最佳的保護力與價值感。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Quick Reference Table -->
-  <section class="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8 pb-16">
-    <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
-      <div class="p-8 pb-4">
-        <h2 class="font-['Noto_Serif_TC',serif] text-xl font-bold mb-2">紙袋材質快速選購摘要表</h2>
-      </div>
-      <div class="overflow-x-auto">
-        <table class="w-full text-sm">
-          <thead>
-            <tr>
-              <th class="bg-[#3D3D3D] text-white font-bold px-6 py-3 text-left">材質系列</th>
-              <th class="bg-[#3D3D3D] text-white font-bold px-6 py-3 text-left">核心特色</th>
-              <th class="bg-[#3D3D3D] text-white font-bold px-6 py-3 text-left">推薦應用</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-gray-100">
-            <tr class="hover:bg-[#F9F7F2] transition-colors">
-              <td class="px-6 py-3 font-semibold text-[#1A5C38]">純漿本牛、白牛</td>
-              <td class="px-6 py-3 text-[#555]">天然無毒、纖維強韌</td>
-              <td class="px-6 py-3 text-[#555]">餐飲外賣、零售、服飾、文創</td>
-            </tr>
-            <tr class="hover:bg-[#F9F7F2] transition-colors bg-[#FAFAFA]">
-              <td class="px-6 py-3 font-semibold text-[#1A5C38]">回收牛皮紙</td>
-              <td class="px-6 py-3 text-[#555]">友善地球、綠色環保</td>
-              <td class="px-6 py-3 text-[#555]">非食品接觸紙袋、手提袋</td>
-            </tr>
-            <tr class="hover:bg-[#F9F7F2] transition-colors">
-              <td class="px-6 py-3 font-semibold text-[#D4710B]">機能淋膜</td>
-              <td class="px-6 py-3 text-[#555]">防醬汁、可熱封、保鮮</td>
-              <td class="px-6 py-3 text-[#555]">漢堡、零件</td>
-            </tr>
-            <tr class="hover:bg-[#F9F7F2] transition-colors bg-[#FAFAFA]">
-              <td class="px-6 py-3 font-semibold text-[#D4710B]">透氣防油</td>
-              <td class="px-6 py-3 text-[#555]">透氣酥脆、不軟爛</td>
-              <td class="px-6 py-3 text-[#555]">炸物、烘焙、甜點</td>
-            </tr>
-            <tr class="hover:bg-[#F9F7F2] transition-colors">
-              <td class="px-6 py-3 font-semibold text-[#6B21A8]">精緻銅版</td>
-              <td class="px-6 py-3 text-[#555]">極致畫質、奢華</td>
-              <td class="px-6 py-3 text-[#555]">精品、禮品</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="bg-[#1A5C38] py-16 md:py-20">
-    <div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
-      <h2 class="font-['Noto_Serif_TC',serif] text-3xl font-bold text-white mb-4">不確定選哪種材質？</h2>
-      <p class="text-white/80 text-lg mb-8">歡迎聯絡壯佳果專業團隊，我們將根據您的需求推薦最合適的紙材方案。</p>
-      <a href="/zh-tw/contact.html" class="bg-white text-[#1A5C38] px-10 py-3.5 rounded-lg font-bold tracking-wider hover:bg-[#F5F0E8] transition inline-block">免費諮詢</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-[#1A1A1A] text-gray-400 pt-16 pb-8">
-    <div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-800">
-        <div><img src="/images/index-logo.png" alt="JJG" class="h-10 mb-4 brightness-200"><p class="text-sm">台灣專業紙袋製造商，超過 70 年經驗。</p></div>
-        <div><h4 class="text-white font-bold mb-4 text-sm tracking-wider">快速連結</h4><ul class="space-y-2 text-sm"><li><a href="/zh-tw/index.html" class="hover:text-[#2E8B57]">首頁</a></li><li><a href="/zh-tw/about.html" class="hover:text-[#2E8B57]">關於我們</a></li><li><a href="/zh-tw/products.html" class="hover:text-[#2E8B57]">產品介紹</a></li></ul></div>
-        <div><h4 class="text-white font-bold mb-4 text-sm tracking-wider">產品系列</h4><ul class="space-y-2 text-sm"><li><a href="/zh-tw/products.html" class="hover:text-[#2E8B57]">全部產品</a></li></ul></div>
-        <div><h4 class="text-white font-bold mb-4 text-sm tracking-wider">聯絡資訊</h4><ul class="space-y-2 text-sm"><li>📍 台中市大甲區游九路6號</li><li>📞 +886-4-26223215</li><li>✉️ export@jjgpaperbag.com</li></ul></div>
-      </div>
-      <div class="pt-6 text-center text-xs text-gray-600">© 2026 壯佳果股份有限公司 版權所有</div>
-    </div>
-  </footer>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>【紙袋材質全攻略】從質感包裝到機能應用的專業指南 | 壯佳果包裝</title>
+<meta content="紙袋材質完整選購指南：環保牛皮系列、機能性食品專用系列、精緻銅版印刷系列，協助您精準選購。" name="description"/>
+<link href="/images/favicon.ico" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+TC:wght@400;500;600;700&amp;family=Noto+Serif+TC:wght@700;900&amp;family=Playfair+Display:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="/main.js" type="module"></script>
+<link href="/style.css" rel="stylesheet"/>
+<meta content="台灣紙袋, 製造商, 工廠, 方底袋, SOS袋, 防油紙袋, 平口袋, 側邊袋, 折角袋, 手提購物袋, 環保包裝, 無PFAS, 壯佳果, 紙袋批發, 食品包裝袋, 烘焙紙袋, 牛皮紙袋" name="keywords"/><meta content="【紙袋材質全攻略】從質感包裝到機能應用的專業指南 | 壯佳果包裝" property="og:title"/><meta content="紙袋材質完整選購指南：環保牛皮系列、機能性食品專用系列、精緻銅版印刷系列，協助您精準選購。" property="og:description"/><meta content="website" property="og:type"/><meta content="https://www.jjgpaperbag.com/zh-tw/wiki/paper-material-guide.html" property="og:url"/><meta content="JJG Paper Bag | Juang Jia Guoo Co., Ltd." property="og:site_name"/><meta content="https://www.jjgpaperbag.com/images/index-logo.png" property="og:image"/><meta content="zh_TW" property="og:locale"/><meta content="summary_large_image" name="twitter:card"/><meta content="【紙袋材質全攻略】從質感包裝到機能應用的專業指南 | 壯佳果包裝" name="twitter:title"/><meta content="紙袋材質完整選購指南：環保牛皮系列、機能性食品專用系列、精緻銅版印刷系列，協助您精準選購。" name="twitter:description"/><meta content="https://www.jjgpaperbag.com/images/index-logo.png" name="twitter:image"/><link href="https://www.jjgpaperbag.com/zh-tw/wiki/paper-material-guide.html" rel="canonical"/><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Juang Jia Guoo Co., Ltd. (JJG Pack)",
+  "alternateName": "壯佳果股份有限公司",
+  "url": "https://www.jjgpaperbag.com",
+  "logo": "https://www.jjgpaperbag.com/images/index-logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+886-4-26223215",
+    "contactType": "sales",
+    "email": "export@jjgpaperbag.com",
+    "areaServed": "Global",
+    "availableLanguage": [
+      "English",
+      "Chinese"
+    ]
+  },
+  "sameAs": [
+    "https://www.youtube.com/watch?v=1BklHKj_q0c"
+  ]
+}</script><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jjgpaperbag.com/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Zh Tw",
+      "item": "https://www.jjgpaperbag.com/zh-tw"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Wiki",
+      "item": "https://www.jjgpaperbag.com/zh-tw/wiki"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Paper Material Guide",
+      "item": "https://www.jjgpaperbag.com/zh-tw/wiki/paper-material-guide.html"
+    }
+  ]
+}</script><meta content="index, follow" name="robots"/><meta content="en_US" property="og:locale:alternate"/></head>
+<body class="bg-[#F5F0E8] text-[#1A1A1A] font-['Inter','Noto_Sans_TC',sans-serif]" x-data="{ mobileMenu: false }">
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
+<nav class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 h-[88px] flex items-center justify-between">
+<a class="flex items-center gap-2" href="/zh-tw/index.html"><img alt="壯佳果" class="h-[68px]" src="/images/index-logo.png"/></a>
+<div class="hidden lg:flex items-center gap-1">
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/index.html">首頁</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/about.html">關於我們</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/products.html">產品介紹</a>
+<a class="relative px-4 py-2 text-[#1A5C38] font-semibold text-[15px] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-5 after:h-0.5 after:bg-[#1A5C38] after:rounded-full" href="/zh-tw/news.html">最新消息</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/catalog.html">型錄EDM</a>
+<a class="px-4 py-2 text-[#555] hover:text-[#1A5C38] font-medium text-[15px] transition-all relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#1A5C38] after:rounded-full hover:after:w-5 after:transition-all" href="/zh-tw/contact.html">聯絡我們</a>
+</div>
+<div class="hidden lg:flex items-center gap-4">
+<a class="bg-[#1A5C38] hover:bg-[#2E8B57] text-white px-5 py-2.5 rounded-lg font-bold text-sm tracking-wider transition shadow" href="/zh-tw/contact.html">聯絡我們</a>
+</div>
+<button @click="mobileMenu=!mobileMenu" class="lg:hidden p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+</nav>
+<div class="lg:hidden glass border-t border-gray-200/50" style="display:none" x-show="mobileMenu" x-transition:enter="transition ease-out duration-300" x-transition:enter-end="opacity-100 translate-y-0" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:leave="transition ease-in duration-200" x-transition:leave-end="opacity-0 -translate-y-2" x-transition:leave-start="opacity-100">
+<div class="px-6 py-5 space-y-1">
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/index.html">首頁</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/about.html">關於我們</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/products.html">產品介紹</a>
+<a class="block py-2 px-3 rounded bg-[#F5F0E8] font-semibold text-[#1A5C38]" href="/zh-tw/news.html">最新消息</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/catalog.html">型錄EDM</a>
+<a class="block py-2 px-3 rounded hover:bg-[#F5F0E8] transition-colors" href="/zh-tw/contact.html">聯絡我們</a>
+</div>
+</div>
+</header>
+<!-- Breadcrumb -->
+<div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 py-4">
+<nav class="text-sm text-[#666]"><a class="hover:text-[#2E8B57]" href="/zh-tw/index.html">首頁</a> <span class="mx-2">›</span> <a class="hover:text-[#2E8B57]" href="/zh-tw/news.html#wiki">最新消息</a> <span class="mx-2">›</span> <span class="text-[#1A5C38] font-medium">紙袋小百科</span></nav>
+</div>
+<!-- Article Header -->
+<section class="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8 pb-8">
+<span class="inline-block text-xs font-bold uppercase tracking-wider text-white bg-[#2E8B57] px-4 py-1.5 rounded-full mb-4">紙袋小百科</span>
+<h1 class="font-['Noto_Serif_TC',serif] text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">【紙袋材質全攻略】<br class="hidden md:block"/>從質感包裝到機能應用的專業指南</h1>
+<p class="text-[#666] text-lg leading-relaxed">紙袋不只是容器，更是品牌的延伸。無論是追求精緻印刷的購物袋，還是講究食安功能的食品袋，選對材質才能發揮最大效益。我們綜合了業界最常見的紙材，協助您精準選購。</p>
+</section>
+<!-- Series 1: 環保與特殊牛皮系列 -->
+<section class="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8 pb-10">
+<div class="bg-white rounded-2xl shadow-sm p-8 md:p-10 border border-gray-100">
+<div class="flex flex-wrap items-center gap-3 mb-4">
+<h2 class="font-['Noto_Serif_TC',serif] text-2xl font-bold text-[#1A5C38]">環保與特殊牛皮系列</h2>
+<span class="text-xs font-semibold tracking-wider text-[#888] uppercase">Eco-Friendly &amp; Kraft</span>
+</div>
+<p class="text-sm text-[#B5813C] font-semibold mb-3">主打特色：天然質感、強韌耐用、文青風格、環保趨勢</p>
+<p class="text-[#555] text-sm leading-relaxed mb-8">此系列保留了紙張的纖維觸感，無毒且易於回收。除了標準的黃/白牛皮外，針對不同印刷與環保需求，還有以下進階選擇：</p>
+<div class="space-y-8">
+<!-- 1. 單光白牛皮紙 -->
+<div class="border-l-4 border-[#1A5C38] pl-6">
+<h3 class="font-bold text-lg mb-3">1. 單光白牛皮紙 <span class="text-[#888] text-sm font-normal">(One-side Glazed White Kraft)</span></h3>
+<p class="text-[#555] text-sm leading-relaxed mb-2"><strong class="text-[#D4710B]">材質特色：</strong>這是一種「雙面性格」的紙張。正面經過壓光處理，呈現光滑亮面，印刷色彩比一般牛皮紙更鮮豔、解析度更好；背面則保留了牛皮紙原本的粗糙啞光質感。</p>
+<p class="text-[#555] text-sm leading-relaxed mb-2"><strong class="text-[#2E8B57]">優勢：</strong>結合了銅版紙的印刷效果與牛皮紙的強韌度。因為本身帶有光澤，通常不需要額外上膜，就能擁有不錯的質感，且抗撕裂性極佳。</p>
+<p class="text-[#888] text-sm"><strong>適用推薦：</strong>服飾店提袋、需要全彩印刷但想保留紙質手感的品牌。</p>
+</div>
+<!-- 2. 回收牛皮紙 -->
+<div class="border-l-4 border-[#1A5C38] pl-6">
+<h3 class="font-bold text-lg mb-3">2. 回收牛皮紙 <span class="text-[#888] text-sm font-normal">(Recycled Kraft Paper)</span></h3>
+<p class="text-[#555] text-sm leading-relaxed mb-2"><strong class="text-[#D4710B]">材質特色：</strong>由再生紙漿（如廢紙箱、報紙等）重新製漿而成。紙色通常較為暗沉或帶有灰階，表面可能會有細小的纖維雜點，這是再生紙特有的「環保印記」。</p>
+<p class="text-[#555] text-sm leading-relaxed mb-2"><strong class="text-[#2E8B57]">優勢：</strong>100%體現循環經濟與永續環保理念，價格通常較具優勢。雖然抗拉力略遜於純木漿牛皮紙，但足以應付一般輕量至中量物品。</p>
+<p class="text-[#888] text-sm"><strong>適用推薦：</strong>主打有機、天然、環保訴求的品牌，或文創市集包裝。</p>
+</div>
+<!-- 3. 赤牛皮紙 / 白牛皮紙 -->
+<div class="border-l-4 border-[#1A5C38] pl-6">
+<h3 class="font-bold text-lg mb-3">3. 赤牛皮紙 / 白牛皮紙 <span class="text-[#888] text-sm font-normal">(Standard Kraft)</span></h3>
+<p class="text-[#555] text-sm leading-relaxed mb-2"><strong class="text-[#D4710B]">赤牛皮：</strong>呈天然木褐色，風格復古粗獷，耐磨又耐用，最適合深色單色印刷（黑、咖、深藍）。</p>
+<p class="text-[#555] text-sm leading-relaxed"><strong class="text-[#D4710B]">白牛皮：</strong>純淨素雅，紙質強韌，適合喜歡極簡風格或日系設計的品牌。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Series 2: 機能性與食品專用系列 -->
+<section class="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8 pb-10">
+<div class="bg-white rounded-2xl shadow-sm p-8 md:p-10 border border-gray-100">
+<div class="flex flex-wrap items-center gap-3 mb-4">
+<h2 class="font-['Noto_Serif_TC',serif] text-2xl font-bold text-[#D4710B]">機能性與食品專用系列</h2>
+<span class="text-xs font-semibold tracking-wider text-[#888] uppercase">Functional &amp; Food Grade</span>
+</div>
+<p class="text-sm text-[#B5813C] font-semibold mb-3">主打特色：防水防油、食安級認證、鎖住美味</p>
+<p class="text-[#555] text-sm leading-relaxed mb-8">針對餐飲與烘焙業者，紙袋需要具備阻隔水氣與油脂的功能。此系列紙張多經過特殊處理，確保包裝不滲漏。</p>
+<div class="space-y-8">
+<!-- 1. 防油紙 -->
+<div class="border-l-4 border-[#D4710B] pl-6">
+<h3 class="font-bold text-lg mb-3">1. 防油紙 <span class="text-[#888] text-sm font-normal">(Greaseproof Paper)</span></h3>
+<p class="text-[#555] text-sm leading-relaxed mb-2"><strong class="text-[#D4710B]">材質特色：</strong>紙張纖維經過高度打漿與特殊處理，降低了紙張的孔隙率，能有效阻擋油脂滲透，但仍保有一定的透氣性。</p>
+<p class="text-[#555] text-sm leading-relaxed mb-2"><strong class="text-[#2E8B57]">優勢：</strong>不含塑膠淋膜，氣性好，能讓剛炸好的食物熱氣散出，避免袋內產生冷凝水導致食物變軟。</p>
+<p class="text-[#888] text-sm"><strong>適用推薦：</strong>雞排、甜甜圈、燒餅油條、麵包等容易出油的熟食包裝。</p>
+</div>
+<!-- 2. PE 淋膜紙 -->
+<div class="border-l-4 border-[#D4710B] pl-6">
+<h3 class="font-bold text-lg mb-3">2. PE 淋膜紙 <span class="text-[#888] text-sm font-normal">(PE Coated Paper)</span></h3>
+<p class="text-[#555] text-sm leading-relaxed mb-2"><strong class="text-[#D4710B]">材質特色：</strong>在紙張表面複合一層極薄的聚乙烯（PE）塑料膜。這層膜賦予了紙張「完全阻隔」的能力。</p>
+<p class="text-[#555] text-sm leading-relaxed mb-2"><strong class="text-[#2E8B57]">優勢：</strong>具備優異的防水、防油與防潮功能。與防油紙不同的是，它能盛裝含有少量湯汁或醬料的食物而不會軟爛破底。</p>
+<p class="text-[#888] text-sm"><strong>適用推薦：</strong>漢堡紙、三明治袋、飲料提袋，或需要高度防潮的冷凍食品外袋。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Series 3: 精緻印刷銅版系列 -->
+<section class="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8 pb-10">
+<div class="bg-white rounded-2xl shadow-sm p-8 md:p-10 border border-gray-100">
+<div class="flex flex-wrap items-center gap-3 mb-4">
+<h2 class="font-['Noto_Serif_TC',serif] text-2xl font-bold text-[#6B21A8]">精緻印刷銅版系列</h2>
+<span class="text-xs font-semibold tracking-wider text-[#888] uppercase">Coated Art Paper</span>
+</div>
+<p class="text-sm text-[#B5813C] font-semibold mb-3">主打特色：色彩飽和、奢華質感、硬挺成型</p>
+<p class="text-[#555] text-sm leading-relaxed mb-8">當您的需求是「像照片一樣清晰」或「精品般的觸感」，此系列是唯一首選。</p>
+<div class="space-y-8">
+<!-- 1. 銅版紙 -->
+<div class="border-l-4 border-[#6B21A8] pl-6">
+<h3 class="font-bold text-lg mb-3">1. 銅版紙 + 上膜 <span class="text-[#888] text-sm font-normal">(Art Paper)</span></h3>
+<p class="text-[#555] text-sm leading-relaxed">表面潔白平滑，吸墨性均勻，能完美呈現細膩的漸層與亮麗色彩。通常搭配「亮膜」或「霧膜」加工，增加耐用度與高級感。</p>
+</div>
+<!-- 2. 銅西卡紙 -->
+<div class="border-l-4 border-[#6B21A8] pl-6">
+<h3 class="font-bold text-lg mb-3">2. 銅西卡紙 <span class="text-[#888] text-sm font-normal">(Ivory Board)</span></h3>
+<p class="text-[#555] text-sm leading-relaxed">加厚版的銅版紙，紙身硬挺厚實，成型後線條俐落，專為高價位精品與禮盒設計，提供最佳的保護力與價值感。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Reference Table -->
+<section class="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8 pb-16">
+<div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+<div class="p-8 pb-4">
+<h2 class="font-['Noto_Serif_TC',serif] text-xl font-bold mb-2">紙袋材質快速選購摘要表</h2>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-sm">
+<thead>
+<tr>
+<th class="bg-[#3D3D3D] text-white font-bold px-6 py-3 text-left">材質系列</th>
+<th class="bg-[#3D3D3D] text-white font-bold px-6 py-3 text-left">核心特色</th>
+<th class="bg-[#3D3D3D] text-white font-bold px-6 py-3 text-left">推薦應用</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-gray-100">
+<tr class="hover:bg-[#F9F7F2] transition-colors">
+<td class="px-6 py-3 font-semibold text-[#1A5C38]">純漿本牛、白牛</td>
+<td class="px-6 py-3 text-[#555]">天然無毒、纖維強韌</td>
+<td class="px-6 py-3 text-[#555]">餐飲外賣、零售、服飾、文創</td>
+</tr>
+<tr class="hover:bg-[#F9F7F2] transition-colors bg-[#FAFAFA]">
+<td class="px-6 py-3 font-semibold text-[#1A5C38]">回收牛皮紙</td>
+<td class="px-6 py-3 text-[#555]">友善地球、綠色環保</td>
+<td class="px-6 py-3 text-[#555]">非食品接觸紙袋、手提袋</td>
+</tr>
+<tr class="hover:bg-[#F9F7F2] transition-colors">
+<td class="px-6 py-3 font-semibold text-[#D4710B]">機能淋膜</td>
+<td class="px-6 py-3 text-[#555]">防醬汁、可熱封、保鮮</td>
+<td class="px-6 py-3 text-[#555]">漢堡、零件</td>
+</tr>
+<tr class="hover:bg-[#F9F7F2] transition-colors bg-[#FAFAFA]">
+<td class="px-6 py-3 font-semibold text-[#D4710B]">透氣防油</td>
+<td class="px-6 py-3 text-[#555]">透氣酥脆、不軟爛</td>
+<td class="px-6 py-3 text-[#555]">炸物、烘焙、甜點</td>
+</tr>
+<tr class="hover:bg-[#F9F7F2] transition-colors">
+<td class="px-6 py-3 font-semibold text-[#6B21A8]">精緻銅版</td>
+<td class="px-6 py-3 text-[#555]">極致畫質、奢華</td>
+<td class="px-6 py-3 text-[#555]">精品、禮品</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- CTA -->
+<section class="bg-[#1A5C38] py-16 md:py-20">
+<div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
+<h2 class="font-['Noto_Serif_TC',serif] text-3xl font-bold text-white mb-4">不確定選哪種材質？</h2>
+<p class="text-white/80 text-lg mb-8">歡迎聯絡壯佳果專業團隊，我們將根據您的需求推薦最合適的紙材方案。</p>
+<a class="bg-white text-[#1A5C38] px-10 py-3.5 rounded-lg font-bold tracking-wider hover:bg-[#F5F0E8] transition inline-block" href="/zh-tw/contact.html">免費諮詢</a>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#1A1A1A] text-gray-400 pt-16 pb-8">
+<div class="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-800">
+<div><img alt="JJG Paper Bag - Juang Jia Guoo Official Logo" class="h-10 mb-4 brightness-200" src="/images/index-logo.png"/><p class="text-sm">台灣專業紙袋製造商，超過 70 年經驗。</p></div>
+<div><h4 class="text-white font-bold mb-4 text-sm tracking-wider">快速連結</h4><ul class="space-y-2 text-sm"><li><a class="hover:text-[#2E8B57]" href="/zh-tw/index.html">首頁</a></li><li><a class="hover:text-[#2E8B57]" href="/zh-tw/about.html">關於我們</a></li><li><a class="hover:text-[#2E8B57]" href="/zh-tw/products.html">產品介紹</a></li></ul></div>
+<div><h4 class="text-white font-bold mb-4 text-sm tracking-wider">產品系列</h4><ul class="space-y-2 text-sm"><li><a class="hover:text-[#2E8B57]" href="/zh-tw/products.html">全部產品</a></li></ul></div>
+<div><h4 class="text-white font-bold mb-4 text-sm tracking-wider">聯絡資訊</h4><ul class="space-y-2 text-sm"><li>📍 台中市大甲區游九路6號</li><li>📞 +886-4-26223215</li><li>✉️ export@jjgpaperbag.com</li></ul></div>
+</div>
+<div class="pt-6 text-center text-xs text-gray-600">© 2026 壯佳果股份有限公司 版權所有</div>
+</div>
+</footer>
 </body>
 </html>
